@@ -65,8 +65,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				// Grow Beyyond Brand Extensions
-				glass: 'hsla(var(--glass-bg))',
-				'glass-border': 'hsla(var(--glass-border))'
+				glass: {
+					DEFAULT: 'rgba(var(--glass-bg))',
+					border: 'rgba(var(--glass-border))'
+				}
 			},
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],

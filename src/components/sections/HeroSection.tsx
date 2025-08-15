@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button'
-import { SplineEmbed } from '@/components/common/SplineEmbed'
 import { ArrowRight, Clock, Users, Award } from 'lucide-react'
 
 export const HeroSection = () => {
@@ -53,31 +52,39 @@ export const HeroSection = () => {
 
           {/* 3D Scene */}
           <div className="relative">
-            <SplineEmbed
-              src="https://prod.spline.design/WN8v3BFvXVYjlsdr/scene.splinecode"
-              height={600}
-              className="rounded-2xl"
-              title="Grow Beyyond 3D Hero Scene"
-            />
-            
-            {/* Fallback for when Spline is not available */}
-            <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="glass-card p-4 text-center">
-                  <div className="w-8 h-8 bg-primary rounded-lg mx-auto mb-2"></div>
-                  <p className="text-sm font-medium">Websites</p>
-                </div>
-                <div className="glass-card p-4 text-center">
-                  <div className="w-8 h-8 bg-accent rounded-lg mx-auto mb-2"></div>
-                  <p className="text-sm font-medium">Social</p>
-                </div>
-                <div className="glass-card p-4 text-center">
-                  <div className="w-8 h-8 bg-yellow-500 rounded-lg mx-auto mb-2"></div>
-                  <p className="text-sm font-medium">Ads</p>
-                </div>
-                <div className="glass-card p-4 text-center">
-                  <div className="w-8 h-8 bg-purple-500 rounded-lg mx-auto mb-2"></div>
-                  <p className="text-sm font-medium">Creative</p>
+            {/* Beautiful gradient placeholder with company services */}
+            <div className="relative h-[600px] bg-gradient-to-br from-primary/10 via-accent/10 to-purple-500/10 rounded-2xl overflow-hidden border border-border/50">
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-background/20 to-transparent"></div>
+              <div className="relative h-full flex items-center justify-center p-8">
+                <div className="grid grid-cols-2 gap-6 max-w-md">
+                  <div className="glass-card p-6 text-center hover:scale-105 transition-transform duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-glow rounded-xl mx-auto mb-3 flex items-center justify-center">
+                      <span className="text-2xl">🌐</span>
+                    </div>
+                    <p className="text-sm font-semibold text-foreground">AI Websites</p>
+                    <p className="text-xs text-muted-foreground mt-1">24h Launch</p>
+                  </div>
+                  <div className="glass-card p-6 text-center hover:scale-105 transition-transform duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-br from-accent to-accent-glow rounded-xl mx-auto mb-3 flex items-center justify-center">
+                      <span className="text-2xl">📱</span>
+                    </div>
+                    <p className="text-sm font-semibold text-foreground">Social Media</p>
+                    <p className="text-xs text-muted-foreground mt-1">Growth Hacks</p>
+                  </div>
+                  <div className="glass-card p-6 text-center hover:scale-105 transition-transform duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl mx-auto mb-3 flex items-center justify-center">
+                      <span className="text-2xl">📈</span>
+                    </div>
+                    <p className="text-sm font-semibold text-foreground">Paid Ads</p>
+                    <p className="text-xs text-muted-foreground mt-1">ROI Focused</p>
+                  </div>
+                  <div className="glass-card p-6 text-center hover:scale-105 transition-transform duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mx-auto mb-3 flex items-center justify-center">
+                      <span className="text-2xl">🎨</span>
+                    </div>
+                    <p className="text-sm font-semibold text-foreground">Creative</p>
+                    <p className="text-xs text-muted-foreground mt-1">Brand Design</p>
+                  </div>
                 </div>
               </div>
             </div>

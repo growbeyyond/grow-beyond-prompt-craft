@@ -14,7 +14,8 @@ import { StickyFloatingCTA } from '@/components/common/StickyFloatingCTA'
 import { SocialProofNotifications } from '@/components/common/SocialProofNotifications'
 import { ClientLogoWall } from '@/components/common/ClientLogoWall'
 import { LiveMetrics } from '@/components/common/LiveMetrics'
-import { LoadingScreen } from '@/components/common/LoadingScreen'
+import { AdvancedLoadingScreen } from '@/components/common/AdvancedLoadingScreen'
+import { AdvancedExitIntent } from '@/components/common/AdvancedExitIntent'
 import { ProcessSection } from '@/components/sections/ProcessSection'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { PricingSection } from '@/components/sections/PricingSection'
@@ -25,7 +26,7 @@ import { SEOHead } from '@/components/common/SEOHead'
 const Home = () => {
   return (
     <>
-      <LoadingScreen />
+      <AdvancedLoadingScreen />
       <div className="min-h-screen">
         <SEOHead />
         <ScrollProgress />
@@ -50,7 +51,7 @@ const Home = () => {
         <WhatsAppFloat />
         <StickyFloatingCTA />
         <SocialProofNotifications />
-        <ExitIntentPopup />
+        <AdvancedExitIntent />
       </div>
     </>
   )

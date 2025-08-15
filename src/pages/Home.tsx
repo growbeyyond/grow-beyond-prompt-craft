@@ -17,6 +17,8 @@ import { LiveMetrics } from '@/components/common/LiveMetrics'
 import { AdvancedLoadingScreen } from '@/components/common/AdvancedLoadingScreen'
 import { AdvancedExitIntent } from '@/components/common/AdvancedExitIntent'
 import { ProcessSection } from '@/components/sections/ProcessSection'
+import { AIChat } from '@/components/common/AIChat'
+import { IndustryShowcase } from '@/components/sections/IndustryShowcase'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { PricingSection } from '@/components/sections/PricingSection'
 import { FAQSection } from '@/components/sections/FAQSection'
@@ -41,6 +43,7 @@ const Home = () => {
           <InteractiveROICalculator />
           <CostCalculator />
           <PortfolioSection />
+          <IndustryShowcase />
           <ProcessSection />
           <TestimonialsSection />
           <PricingSection />
@@ -52,6 +55,7 @@ const Home = () => {
         <StickyFloatingCTA />
         <SocialProofNotifications />
         <AdvancedExitIntent />
+        <AIChat />
       </div>
     </>
   )

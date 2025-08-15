@@ -136,7 +136,14 @@ All colors MUST be HSL.
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary via-primary/80 to-accent bg-clip-text text-transparent;
+    background-size: 200% 100%;
+    animation: gradient-shift 3s ease-in-out infinite;
+  }
+  
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
   }
   
   .hero-gradient {

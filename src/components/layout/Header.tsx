@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { DarkModeToggle } from '@/components/common/DarkModeToggle'
+import { Logo } from '@/components/common/Logo'
 import { Menu, X, Phone } from 'lucide-react'
 
 export const Header = () => {
@@ -22,8 +23,8 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-display font-bold gradient-text">
-              Grow Beyyond
+            <a href="/" className="block">
+              <Logo variant="full" />
             </a>
           </div>
 

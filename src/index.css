@@ -10,11 +10,11 @@ All colors MUST be HSL.
 :root {
   /* Base Colors - Clean White Premium Background */
   --background: 0 0% 100%;
-  --foreground: 0 0% 3%;
-  --card: 0 0% 98%;
-  --card-foreground: 0 0% 5%;
+  --foreground: 0 0% 12%;
+  --card: 0 0% 99%;
+  --card-foreground: 0 0% 8%;
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 3%;
+  --popover-foreground: 0 0% 12%;
   
   /* Primary - Sophisticated Green inspired by Grow Beyyond logo */
   --primary: 142 76% 48%;

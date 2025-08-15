@@ -15,9 +15,9 @@ import { SocialProofNotifications } from '@/components/common/SocialProofNotific
 import { ClientLogoWall } from '@/components/common/ClientLogoWall'
 import { LiveMetrics } from '@/components/common/LiveMetrics'
 import { AdvancedLoadingScreen } from '@/components/common/AdvancedLoadingScreen'
-import { AdvancedExitIntent } from '@/components/common/AdvancedExitIntent'
+
 import { ProcessSection } from '@/components/sections/ProcessSection'
-import { AIChat } from '@/components/common/AIChat'
+
 import { IndustryShowcase } from '@/components/sections/IndustryShowcase'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { PricingSection } from '@/components/sections/PricingSection'
@@ -54,8 +54,6 @@ const Home = () => {
         <WhatsAppFloat />
         <StickyFloatingCTA />
         <SocialProofNotifications />
-        <AdvancedExitIntent />
-        <AIChat />
       </div>
     </>
   )

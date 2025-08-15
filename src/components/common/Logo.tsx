@@ -8,49 +8,55 @@ interface LogoProps {
 export const Logo = ({ className, variant = 'full' }: LogoProps) => {
   return (
     <div className={cn("flex items-center group cursor-pointer", className)}>
-      {/* Premium Logo Icon with Micro-Animations */}
+      {/* Nature-Tech Hybrid Logo */}
       <div className="relative mr-3">
-        {/* Main Logo Shape - Premium Diamond with Glow */}
-        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary via-primary-glow to-accent flex items-center justify-center shadow-premium group-hover:shadow-glow transition-all duration-500 hover-lift">
-          <div className="w-6 h-6 bg-white rounded-lg transform rotate-45 relative group-hover:rotate-[60deg] transition-transform duration-700">
-            <div className="absolute inset-1 bg-gradient-to-br from-primary/30 to-accent/30 rounded-sm group-hover:from-primary/50 group-hover:to-accent/50 transition-colors duration-300"></div>
-            {/* Inner Sparkle */}
-            <div className="absolute inset-2 bg-gradient-to-br from-white to-primary/20 rounded-xs opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+        {/* Main Logo - Organic Leaf Shape with Tech Elements */}
+        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 via-emerald-400 to-teal-500 flex items-center justify-center shadow-lg group-hover:shadow-green-500/30 transition-all duration-500 hover-lift relative overflow-hidden">
+          {/* Leaf Shape */}
+          <div className="w-7 h-7 bg-white/90 rounded-full relative transform group-hover:scale-110 transition-transform duration-500">
+            {/* Organic Pattern */}
+            <div className="absolute inset-1 bg-gradient-to-br from-green-400/30 to-emerald-500/30 rounded-full"></div>
+            {/* Tech Circuit Lines */}
+            <div className="absolute inset-2 border border-green-400/40 rounded-full"></div>
+            <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-green-500 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
           </div>
+          
+          {/* Animated Growth Ring */}
+          <div className="absolute inset-0 rounded-2xl border-2 border-green-400/20 animate-pulse"></div>
         </div>
         
-        {/* Premium Status Indicator with Pulse */}
+        {/* Growth Indicator */}
         <div className="absolute -top-1 -right-1 flex items-center justify-center">
-          <div className="w-5 h-5 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full pulse-glow flex items-center justify-center">
-            <div className="w-2.5 h-2.5 bg-white rounded-full animate-pulse-premium"></div>
+          <div className="w-4 h-4 bg-gradient-to-r from-emerald-400 to-green-500 rounded-full pulse-glow flex items-center justify-center">
+            <div className="w-1.5 h-1.5 bg-white rounded-full"></div>
           </div>
         </div>
         
-        {/* Floating Particles */}
-        <div className="absolute -top-2 -left-2 w-2 h-2 bg-primary/30 rounded-full float opacity-60 group-hover:opacity-100 transition-opacity duration-500" style={{ animationDelay: '0.5s' }}></div>
-        <div className="absolute -bottom-1 -right-2 w-1.5 h-1.5 bg-accent/40 rounded-full float opacity-40 group-hover:opacity-80 transition-opacity duration-500" style={{ animationDelay: '1.2s' }}></div>
+        {/* Floating Growth Elements */}
+        <div className="absolute -top-2 -left-2 w-1.5 h-1.5 bg-green-400/60 rounded-full float opacity-60 group-hover:opacity-100 transition-opacity duration-500" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute -bottom-1 -right-2 w-1 h-1 bg-emerald-400/40 rounded-full float opacity-40 group-hover:opacity-80 transition-opacity duration-500" style={{ animationDelay: '1.2s' }}></div>
       </div>
       
-      {/* Premium Logo Text with Enhanced Effects */}
+      {/* Premium Logo Text */}
       {variant === 'full' && (
         <div className="flex flex-col">
-          <span className="text-2xl font-display font-black gradient-text leading-none tracking-tight group-hover:scale-105 transition-transform duration-500">
-            Grow Beyyond
+          <span className="text-2xl font-display font-black bg-gradient-to-r from-green-600 via-emerald-500 to-teal-600 bg-clip-text text-transparent leading-none tracking-tight group-hover:scale-105 transition-transform duration-500">
+            GROW BEYYOND
           </span>
-          <span className="text-xs text-muted-foreground font-bold tracking-[0.25em] uppercase opacity-70 group-hover:opacity-100 group-hover:text-primary/80 transition-all duration-500">
-            Digital Excellence
+          <span className="text-xs text-muted-foreground font-bold tracking-[0.25em] uppercase opacity-70 group-hover:opacity-100 group-hover:text-green-600/80 transition-all duration-500">
+            Digital Growth Agency
           </span>
         </div>
       )}
       
       {variant === 'compact' && (
-        <span className="text-xl font-display font-black gradient-text group-hover:scale-105 transition-transform duration-500">
-          Grow Beyyond
+        <span className="text-xl font-display font-black bg-gradient-to-r from-green-600 via-emerald-500 to-teal-600 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-500">
+          GROW BEYYOND
         </span>
       )}
       
-      {/* Subtle Glow Effect */}
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary/0 via-primary/5 to-accent/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none blur-xl"></div>
+      {/* Subtle Growth Aura */}
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500/0 via-emerald-400/5 to-teal-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none blur-xl"></div>
     </div>
   )
 }

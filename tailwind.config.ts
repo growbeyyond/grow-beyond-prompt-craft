@@ -61,7 +61,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Grow Beyyond Brand Extensions
+				glass: 'hsla(var(--glass-bg))',
+				'glass-border': 'hsla(var(--glass-border))'
+			},
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				display: ['Poppins', 'system-ui', 'sans-serif'],
+				clash: ['Clash Display', 'system-ui', 'sans-serif']
+			},
+			backdropBlur: {
+				xs: '2px',
+				sm: '4px',
+				md: '12px',
+				lg: '16px',
+				xl: '24px',
+				'2xl': '32px'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

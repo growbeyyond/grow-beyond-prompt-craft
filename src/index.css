@@ -144,9 +144,10 @@ All colors MUST be HSL.
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent font-display font-bold;
     background-size: 200% 100%;
     animation: gradient-shift 4s ease-in-out infinite;
+    letter-spacing: -0.02em;
   }
   
   .hero-gradient {

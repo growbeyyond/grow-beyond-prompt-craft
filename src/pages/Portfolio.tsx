@@ -9,157 +9,182 @@ import { ExternalLink, TrendingUp, Users, Clock, Filter } from 'lucide-react'
 const portfolioProjects = [
   {
     id: 1,
-    title: "Dr. Rajesh Sharma - Cardiology Clinic",
+    title: "Dr. Sindhu Pericherla - OncoCore Oncology",
     category: "Healthcare",
     industry: "Medical",
-    description: "Complete digital transformation for a leading cardiologist in Mumbai. Implemented patient booking system, Google Ads campaigns, and reputation management.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+    description: "Comprehensive digital presence for leading oncologist in Hyderabad. Professional website with appointment booking, patient education resources, and Google My Business optimization.",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop",
     results: {
-      leads: "400+ Monthly Patient Appointments",
-      growth: "300% Increase in New Patients",
+      leads: "200+ Monthly Patient Inquiries",
+      growth: "300% Increase in Online Visibility",
       time: "2 Weeks to Launch",
-      revenue: "₹15L+ Monthly Revenue Growth"
+      revenue: "₹10L+ Monthly Practice Growth"
     },
     features: [
+      "Professional medical website design",
       "Patient appointment booking system",
-      "Google Ads with medical keywords",
-      "Patient testimonial management",
-      "HIPAA-compliant contact forms",
-      "Medical SEO optimization",
-      "Insurance information integration"
+      "Cancer care information portal",
+      "Google My Business optimization",
+      "Medical SEO for oncology keywords",
+      "Social media presence management"
     ],
-    technologies: ["WordPress", "Google Ads", "Calendly", "WhatsApp API"],
-    url: "#",
-    testimonial: "Grow Beyyond transformed my practice completely. Within 2 months, my patient appointments increased by 400%."
+    technologies: ["WordPress", "Google Ads", "Calendly", "WhatsApp Business"],
+    url: "https://drsindhupericherlaonco.in/",
+    testimonial: "Grow Beyyond created an exceptional online presence for my oncology practice. The website and digital marketing increased patient inquiries by 300%."
   },
   {
     id: 2,
-    title: "Elite Coaching Institute - JEE/NEET Preparation",
-    category: "Education",
-    industry: "Coaching",
-    description: "Student enrollment system with automated lead nurturing for India's premier JEE/NEET coaching institute. Increased admissions by 250% in 6 months.",
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop",
+    title: "Dr. Namratha Sai Reddy - Gynecology Specialist", 
+    category: "Healthcare",
+    industry: "Medical",
+    description: "Modern gynecology practice website with advanced booking system, patient portal, and comprehensive women's health information. Enhanced digital credibility and patient trust.",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
     results: {
-      leads: "600+ Student Inquiries Monthly",
-      growth: "250% Increase in Admissions",
+      leads: "150+ Monthly Appointments",
+      growth: "250% Digital Reach Expansion", 
       time: "3 Weeks Development",
-      revenue: "₹50L+ Annual Revenue Increase"
+      revenue: "₹8L+ Additional Monthly Revenue"
     },
     features: [
-      "Student admission portal",
-      "Course comparison tools",
-      "Faculty profile showcases",
-      "Student success story gallery",
-      "Fee payment integration",
-      "Parent-student communication system"
+      "Women's health information portal",
+      "Online consultation booking",
+      "Patient education resources",
+      "Pregnancy care guidance",
+      "Health blog and articles",
+      "Multi-language support (Telugu/English)"
     ],
-    technologies: ["React", "Node.js", "Razorpay", "Google Analytics"],
-    url: "#",
-    testimonial: "The website and marketing strategy helped us enroll 300+ new students in just 4 months. Exceptional ROI!"
+    technologies: ["WordPress", "WooCommerce", "Razorpay", "Google Analytics"],
+    url: "https://drnamrathasaireddy.in/",
+    testimonial: "The website perfectly represents my practice values. Patient bookings have increased significantly, and the professional design builds immediate trust."
   },
   {
     id: 3,
-    title: "Premium Properties - Luxury Real Estate",
-    category: "Real Estate",
-    industry: "Property",
-    description: "Property showcase website with advanced filtering and WhatsApp integration. Generated ₹2Cr+ in property sales through digital marketing.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
+    title: "Footryx Clinics - Podiatry Chain",
+    category: "Healthcare", 
+    industry: "Medical",
+    description: "Multi-location podiatry clinic network with comprehensive foot care services showcase. Advanced appointment management system across multiple clinic locations.",
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop",
     results: {
-      leads: "200+ Quality Property Leads",
-      growth: "₹2Cr+ in Property Sales",
+      leads: "300+ New Patient Registrations",
+      growth: "400% Website Traffic Increase", 
       time: "4 Weeks Complete Setup",
-      revenue: "300% ROI on Marketing Spend"
+      revenue: "₹20L+ Additional Annual Revenue"
     },
     features: [
-      "Advanced property search and filters",
-      "Virtual tour integrations",
-      "Mortgage calculator tools",
-      "Agent profile and contact system",
-      "Property comparison features",
-      "Lead scoring and CRM integration"
+      "Multi-location clinic management",
+      "Foot care service showcase",
+      "Online appointment scheduling",
+      "Treatment gallery and testimonials",
+      "Insurance and payment options",
+      "Specialized equipment information"
     ],
-    technologies: ["Next.js", "Tailwind CSS", "Firebase", "WhatsApp Business API"],
-    url: "#",
-    testimonial: "Our property sales increased by 250% after launching. The automated lead system saves us 10+ hours per week."
+    technologies: ["WordPress", "Multi-site", "Booking Calendar", "Google Maps"],
+    url: "https://footryxclinics.com/",
+    testimonial: "Grow Beyyond understood our specialized field perfectly. The website showcases our expertise and the appointment system streamlined our operations completely."
   },
   {
     id: 4,
-    title: "Wellness Center Chain - Multi-location Fitness",
-    category: "Wellness",
-    industry: "Fitness",
-    description: "Multi-location booking system with membership management for a premium wellness center chain. 180% increase in member signups.",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
+    title: "Astro Today - Complete Astrology Platform",
+    category: "Spiritual Services",
+    industry: "Consulting",
+    description: "Comprehensive astrology platform with consultation booking, horoscope services, and content management. Modern digital approach to traditional astrology services.",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop",
     results: {
-      leads: "500+ New Memberships",
-      growth: "180% Increase in Signups",
-      time: "5 Weeks Deployment",
-      revenue: "₹25L+ Additional Annual Revenue"
+      leads: "500+ Monthly Consultations",
+      growth: "350% Online Booking Increase",
+      time: "6 Weeks Platform Development", 
+      revenue: "₹15L+ Monthly Platform Revenue"
     },
     features: [
-      "Multi-location class scheduling",
-      "Membership plan comparisons",
-      "Trainer profile and booking",
-      "Wellness program showcases",
-      "Health assessment forms",
-      "Member community features"
+      "Online astrology consultation booking",
+      "Personalized horoscope generation",
+      "Vedic astrology content library",
+      "Multiple consultation formats (chat/call/video)",
+      "Payment gateway integration",
+      "Astrologer profile management"
     ],
-    technologies: ["WordPress", "WooCommerce", "Booking Plugin", "Google Maps API"],
-    url: "#",
-    testimonial: "The website and social media strategy brought us 200+ new members in 3 months. Professional and results-driven team."
+    technologies: ["React", "Node.js", "MongoDB", "Razorpay", "Video API"],
+    url: "https://astrotoday.net/",
+    testimonial: "The platform exceeded expectations. We now serve clients globally, and the automated booking system handles 500+ consultations monthly seamlessly."
   },
   {
     id: 5,
-    title: "Agarwal & Associates - CA Firm",
-    category: "Professional",
-    industry: "Finance",
-    description: "B2B lead generation system for a leading CA firm. Specialized in corporate tax and audit services with automated client acquisition.",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
+    title: "Dr. Gnaneswar Atturu - Medical Practice",
+    category: "Healthcare",
+    industry: "Medical", 
+    description: "Professional medical practice website with comprehensive patient resources, appointment booking, and medical expertise showcase for specialized healthcare services.",
+    image: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&h=400&fit=crop",
     results: {
-      leads: "50+ Qualified B2B Leads Monthly",
-      growth: "300% Increase in Business Inquiries",
-      time: "3 Weeks Go-Live",
-      revenue: "₹40L+ New Business Value"
+      leads: "120+ Monthly Patient Inquiries",
+      growth: "280% Online Presence Growth",
+      time: "3 Weeks Launch", 
+      revenue: "₹6L+ Monthly Practice Growth"
     },
     features: [
-      "Service portfolio showcase",
-      "Client testimonial system",
-      "Consultation booking calendar",
-      "Resource download center",
-      "Professional blog system",
-      "B2B lead qualification forms"
+      "Medical expertise showcase",
+      "Patient appointment system",
+      "Health education resources",
+      "Insurance and billing information",
+      "Multi-language patient support",
+      "Telehealth consultation options"
     ],
-    technologies: ["Webflow", "HubSpot", "Calendly", "LinkedIn Integration"],
-    url: "#",
-    testimonial: "Their B2B lead generation system is incredible. We now get 50+ qualified business inquiries every month."
+    technologies: ["WordPress", "Medical Theme", "Booking Plugin", "WhatsApp"],
+    url: "https://drgnaneswaratturu.com/",
+    testimonial: "The website perfectly communicates my medical expertise. Patient trust and appointment bookings have increased substantially since launch."
   },
   {
     id: 6,
-    title: "Fashion Forward - Designer Boutique",
-    category: "E-commerce",
-    industry: "Fashion",
-    description: "Complete e-commerce solution for a premium fashion boutique with inventory management and social commerce integration.",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop",
+    title: "Natureland Infra - Real Estate Development",
+    category: "Real Estate",
+    industry: "Construction",
+    description: "Premium real estate and infrastructure development company showcase with project galleries, investment opportunities, and lead generation system.",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
     results: {
-      leads: "300+ Online Orders Monthly",
-      growth: "300% Increase in Online Sales",
-      time: "6 Weeks Full Launch",
-      revenue: "₹10L+ Monthly Online Revenue"
+      leads: "100+ Quality Investment Inquiries",
+      growth: "400% Digital Lead Generation",
+      time: "5 Weeks Project Completion",
+      revenue: "₹50L+ Pipeline Value Generated"
     },
     features: [
-      "Product catalog with variants",
-      "Shopping cart and checkout",
-      "Inventory management system",
-      "Customer account portal",
-      "Social media integration",
-      "Email marketing automation"
+      "Project portfolio showcase",
+      "Virtual property tours",
+      "Investment calculator tools",
+      "Location advantage highlights",
+      "Construction progress updates",
+      "Investor inquiry management"
     ],
-    technologies: ["Shopify", "Klaviyo", "Instagram API", "Google Shopping"],
+    technologies: ["WordPress", "Real Estate Plugin", "Virtual Tour", "CRM"],
     url: "#",
-    testimonial: "The e-commerce website increased our online sales by 300%. Beautiful design and smooth checkout process."
+    testimonial: "Our digital presence now matches our premium projects. The website generates high-quality leads and showcases our developments professionally."
+  },
+  {
+    id: 7,
+    title: "Seema Ali - Life Coach & Wellness Expert",
+    category: "Wellness",
+    industry: "Coaching",
+    description: "Personal brand website for life coaching services with session booking, wellness programs, and client transformation showcases. Empowering digital presence for holistic wellness.",
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop",
+    results: {
+      leads: "80+ Monthly Coaching Inquiries",
+      growth: "300% Personal Brand Growth",
+      time: "3 Weeks Brand Launch",
+      revenue: "₹5L+ Monthly Coaching Revenue"
+    },
+    features: [
+      "Personal brand storytelling",
+      "Coaching session booking system",
+      "Wellness program showcases",
+      "Client transformation galleries",
+      "Blog and wellness content",
+      "Online course integration"
+    ],
+    technologies: ["WordPress", "Coaching Theme", "Booking System", "Content Hub"],
+    url: "#",
+    testimonial: "My online presence now reflects my coaching expertise perfectly. Client bookings have tripled, and my digital brand attracts the right audience consistently."
   }
 ]
 
-const categories = ["All", "Healthcare", "Education", "Real Estate", "Wellness", "Professional", "E-commerce"]
+const categories = ["All", "Healthcare", "Spiritual Services", "Real Estate", "Wellness", "Professional", "E-commerce"]
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("All")

@@ -72,8 +72,9 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
-				display: ['Poppins', 'system-ui', 'sans-serif'],
-				clash: ['Clash Display', 'system-ui', 'sans-serif']
+				display: ['Clash Display', 'Satoshi', 'system-ui', 'sans-serif'],
+				clash: ['Clash Display', 'system-ui', 'sans-serif'],
+				satoshi: ['Satoshi', 'system-ui', 'sans-serif']
 			},
 			backdropBlur: {
 				xs: '2px',

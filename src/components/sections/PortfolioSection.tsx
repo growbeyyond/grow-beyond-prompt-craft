@@ -4,52 +4,52 @@ import { ExternalLink, TrendingUp, Users, Clock } from 'lucide-react'
 
 const portfolioItems = [
   {
-    title: "Dr. Sharma's Clinic",
+    title: "Dr. Sindhu Pericherla - OncoCore",
     category: "Healthcare",
-    description: "Complete digital transformation with website, Google Ads, and patient booking system. 300% increase in appointments.",
+    description: "Complete digital presence for leading oncologist in Hyderabad. Professional website with appointment booking and patient education resources.",
     metrics: {
-      leads: "400+ Monthly Leads",
-      growth: "300% Growth",
-      time: "2 Weeks Setup"
+      leads: "200+ Patient Inquiries",
+      growth: "300% Online Presence",
+      time: "2 Weeks Launch"
+    },
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop",
+    url: "https://drsindhupericherlaonco.in/"
+  },
+  {
+    title: "Dr. Namratha Sai Reddy - Gynecology",
+    category: "Healthcare", 
+    description: "Modern medical website with advanced booking system and patient portal. Enhanced digital credibility for women's healthcare specialist.",
+    metrics: {
+      leads: "150+ Appointments",
+      growth: "250% Digital Reach",
+      time: "3 Weeks Live"
     },
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=250&fit=crop",
-    url: "#"
+    url: "https://drnamrathasaireddy.in/"
   },
   {
-    title: "Elite Coaching Institute",
-    category: "Education",
-    description: "Student enrollment system with automated lead nurturing. Increased admissions by 250% in 6 months.",
+    title: "Footryx Clinics - Podiatry Chain",
+    category: "Healthcare",
+    description: "Multi-location podiatry clinic website with service showcase and appointment management. Comprehensive foot care solutions.",
     metrics: {
-      leads: "600+ Student Inquiries",
-      growth: "250% Admissions",
-      time: "3 Weeks Launch"
+      leads: "300+ New Patients", 
+      growth: "400% Website Traffic",
+      time: "4 Weeks Complete"
     },
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=250&fit=crop",
-    url: "#"
+    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&h=250&fit=crop",
+    url: "https://footryxclinics.com/"
   },
   {
-    title: "Premium Properties",
-    category: "Real Estate",
-    description: "Property showcase website with advanced filtering and WhatsApp integration. Generated ₹2Cr+ in sales.",
+    title: "Astro Today - Astrology Platform",
+    category: "Spiritual Services",
+    description: "Complete astrology platform with consultation booking, horoscope services, and content management. Modern approach to traditional services.",
     metrics: {
-      leads: "200+ Quality Leads",
-      growth: "₹2Cr+ Sales",
-      time: "4 Weeks Live"
+      leads: "500+ Consultations",
+      growth: "350% Online Bookings", 
+      time: "6 Weeks Platform"
     },
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=250&fit=crop",
-    url: "#"
-  },
-  {
-    title: "Wellness Center Chain",
-    category: "Wellness",
-    description: "Multi-location booking system with membership management. 180% increase in member signups.",
-    metrics: {
-      leads: "500+ Memberships",
-      growth: "180% Signups",
-      time: "5 Weeks Deploy"
-    },
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop",
-    url: "#"
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop",
+    url: "https://astrotoday.net/"
   }
 ]
 
@@ -107,8 +107,13 @@ export const PortfolioSection = () => {
                   </div>
                 </div>
 
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  View Case Study <ExternalLink className="w-4 h-4 ml-2" />
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  onClick={() => window.open(item.url, '_blank')}
+                  className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
+                >
+                  View Live Site <ExternalLink className="w-4 h-4 ml-2" />
                 </Button>
               </CardContent>
             </Card>
@@ -116,7 +121,11 @@ export const PortfolioSection = () => {
         </div>
 
         <div className="text-center">
-          <Button size="lg" variant="outline">
+          <Button 
+            size="lg" 
+            variant="outline"
+            onClick={() => window.open('/portfolio', '_self')}
+          >
             View All Projects
           </Button>
         </div>

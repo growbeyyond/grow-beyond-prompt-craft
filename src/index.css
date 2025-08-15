@@ -56,19 +56,19 @@ All colors MUST be HSL.
   --success: 120 65% 45%;
   --warning: 45 95% 55%;
   
-  /* Premium Glass Effects */
-  --glass-bg: 0 0% 2% / 0.85;
-  --glass-border: 0 0% 25% / 0.15;
-  --glass-shadow: 0 0% 0% / 0.4;
-  --glass-backdrop: blur(12px);
+  /* Premium Glass Effects - Light Theme Optimized */
+  --glass-bg: 255 255 255 / 0.15;
+  --glass-border: 142 76% 48% / 0.1;
+  --glass-shadow: 0 0% 0% / 0.08;
+  --glass-backdrop: blur(16px);
   
-  /* Cinematic Gradients */
+  /* Light Theme Gradients */
   --gradient-primary: linear-gradient(135deg, hsl(142 76% 48%) 0%, hsl(189 100% 48%) 50%, hsl(270 95% 65%) 100%);
-  --gradient-secondary: linear-gradient(45deg, hsl(0 0% 4%) 0%, hsl(210 25% 8%) 100%);
-  --gradient-hero: radial-gradient(ellipse at top, hsl(142 76% 8%) 0%, hsl(0 0% 2%) 60%);
-  --gradient-card: linear-gradient(145deg, hsl(0 0% 4%) 0%, hsl(0 0% 2%) 100%);
-  --gradient-premium: linear-gradient(135deg, hsl(142 96% 78%) 0%, hsl(189 100% 68%) 50%, hsl(270 95% 75%) 100%);
-  --gradient-subtle: linear-gradient(180deg, hsl(0 0% 6%) 0%, hsl(0 0% 2%) 100%);
+  --gradient-secondary: linear-gradient(45deg, hsl(0 0% 98%) 0%, hsl(0 0% 96%) 100%);
+  --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 50%, hsl(142 76% 98%) 100%);
+  --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
+  --gradient-premium: linear-gradient(135deg, hsl(142 76% 55%) 0%, hsl(189 100% 55%) 50%, hsl(270 95% 65%) 100%);
+  --gradient-subtle: linear-gradient(180deg, hsl(0 0% 99%) 0%, hsl(0 0% 97%) 100%);
   
   /* Animation & Shadow Variables */
   --shadow-premium: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
@@ -123,19 +123,19 @@ All colors MUST be HSL.
 
 /* ============= PREMIUM COMPONENT UTILITIES ============= */
 
-/* Advanced Glass Card Effects */
+/* Advanced Glass Card Effects - Light Theme */
 .glass-card {
-  background: hsl(var(--glass-bg));
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: var(--glass-backdrop);
   border: 1px solid hsl(var(--glass-border));
-  box-shadow: var(--shadow-premium);
+  box-shadow: 0 4px 20px hsl(0 0% 0% / 0.05);
   transition: var(--transition-premium);
 }
 
 .glass-card:hover {
-  border-color: hsl(var(--primary) / 0.3);
-  box-shadow: var(--shadow-premium), var(--shadow-glow);
-  transform: translateY(-2px);
+  border-color: hsl(var(--primary) / 0.4);
+  box-shadow: 0 8px 30px hsl(0 0% 0% / 0.1), 0 0 20px hsl(var(--primary) / 0.2);
+  transform: translateY(-4px);
 }
 
 .glass-card-premium {
@@ -160,7 +160,7 @@ All colors MUST be HSL.
   50% { background-position: 100% 50%; }
 }
 
-/* Cinematic Gradient Backgrounds */
+/* Light Theme Gradient Backgrounds */
 .hero-gradient {
   background: var(--gradient-hero);
   position: relative;
@@ -170,8 +170,8 @@ All colors MUST be HSL.
   content: '';
   position: absolute;
   inset: 0;
-  background: var(--gradient-subtle);
-  opacity: 0.5;
+  background: linear-gradient(135deg, hsl(142 76% 98% / 0.3) 0%, hsl(189 100% 98% / 0.2) 100%);
+  opacity: 0.8;
 }
 
 /* Premium Shadows */

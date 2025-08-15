@@ -1,21 +1,9 @@
 import { Badge } from '@/components/ui/badge'
-
-const clients = [
-  { name: "Dr. Sindhu Pericherla", industry: "Healthcare", logo: "🏥" },
-  { name: "Dr. Namratha Sai Reddy", industry: "Healthcare", logo: "👩‍⚕️" },
-  { name: "Footryx Clinics", industry: "Healthcare", logo: "🦶" },
-  { name: "Astro Today", industry: "Spiritual", logo: "⭐" },
-  { name: "Hyderabad Realty", industry: "Real Estate", logo: "🏢" },
-  { name: "TechFlow Solutions", industry: "Technology", logo: "💻" },
-  { name: "Elite Fitness", industry: "Fitness", logo: "💪" },
-  { name: "Golden Spoon", industry: "Restaurant", logo: "🍽️" },
-  { name: "Sparkle Salon", industry: "Beauty", logo: "✨" },
-  { name: "EduMax Academy", industry: "Education", logo: "📚" },
-  { name: "AutoCare Pro", industry: "Automotive", logo: "🚗" },
-  { name: "Green Valley", industry: "Agriculture", logo: "🌱" }
-]
+import { getLogoWallClients } from '@/lib/client-data'
 
 export const ClientLogoWall = () => {
+  const clients = getLogoWallClients()
+  
   return (
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -32,16 +20,16 @@ export const ClientLogoWall = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
-          {clients.map((client, index) => (
+          {clients.map((client) => (
             <div
-              key={index}
+              key={client.id}
               className="glass-card p-6 text-center hover:scale-105 transition-all duration-300 group cursor-pointer border-0"
             >
               <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">
                 {client.logo}
               </div>
               <h3 className="font-bold text-sm mb-1 group-hover:gradient-text transition-all duration-300">
-                {client.name}
+                {client.company}
               </h3>
               <p className="text-xs text-muted-foreground">
                 {client.industry}
@@ -53,14 +41,17 @@ export const ClientLogoWall = () => {
         <div className="text-center mt-12">
           <div className="inline-flex items-center gap-2 text-sm text-muted-foreground">
             <div className="flex -space-x-2">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-accent border-2 border-background flex items-center justify-center text-white text-xs font-bold"
-                >
-                  {String.fromCharCode(65 + i)}
-                </div>
+              {clients.slice(0, 4).map((client) => (
+                <img
+                  key={client.id}
+                  src={client.avatar}
+                  alt={client.name}
+                  className="w-8 h-8 rounded-full border-2 border-background object-cover"
+                />
               ))}
+              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-accent border-2 border-background flex items-center justify-center text-white text-xs font-bold">
+                +
+              </div>
             </div>
             <span>+50 more happy clients growing their business</span>
           </div>

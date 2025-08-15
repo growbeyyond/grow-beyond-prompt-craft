@@ -1,5 +1,6 @@
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
+import { Logo } from '@/components/common/Logo'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Target, Users, Zap, Award, Heart, TrendingUp, CheckCircle } from 'lucide-react'
@@ -280,81 +281,13 @@ const About = () => {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-display font-bold mb-6">
-                Meet Our <span className="gradient-text">Team</span>
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                A passionate team of digital marketing experts, developers, and growth strategists 
-                dedicated to your success.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <Card className="glass-card border-glass-border text-center">
-                <CardHeader>
-                  <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
-                    alt="Founder & CEO"
-                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                  />
-                  <CardTitle>Arjun Sharma</CardTitle>
-                  <CardDescription>Founder & CEO</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    10+ years in digital marketing with Fortune 500 companies. 
-                    Passionate about helping businesses grow beyond limitations.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="glass-card border-glass-border text-center">
-                <CardHeader>
-                  <img 
-                    src="https://images.unsplash.com/photo-1494790108755-2616b612b1d4?w=150&h=150&fit=crop&crop=face" 
-                    alt="Head of Marketing"
-                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                  />
-                  <CardTitle>Priya Mehta</CardTitle>
-                  <CardDescription>Head of Marketing</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Google Ads certified expert with 8+ years experience. 
-                    Specializes in high-ROI campaigns for service businesses.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="glass-card border-glass-border text-center">
-                <CardHeader>
-                  <img 
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" 
-                    alt="Lead Developer"
-                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                  />
-                  <CardTitle>Raj Patel</CardTitle>
-                  <CardDescription>Lead Developer</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Full-stack developer and UX expert. Creates websites that 
-                    not only look great but convert visitors into customers.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
+        {/* Team Section DELETED - Replaced with Logo showcase */}
 
         {/* CTA Section */}
         <section className="py-20 hero-gradient">
           <div className="container mx-auto px-4">
             <div className="text-center">
+              <Logo className="justify-center mb-8" />
               <h2 className="text-3xl font-display font-bold mb-6">
                 Ready to Grow <span className="gradient-text">Beyyond</span> Your Current Results?
               </h2>

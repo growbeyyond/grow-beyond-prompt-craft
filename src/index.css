@@ -55,9 +55,9 @@ All colors MUST be HSL.
     --gradient-hero: linear-gradient(180deg, hsl(0 0% 0%), hsl(190 95% 5%)); /* Black to dark cyan */
     --gradient-accent: linear-gradient(135deg, hsl(80 85% 60%), hsl(190 95% 55%)); /* Lime to cyan */
     
-    /* Logo-inspired Glow Effects */
-    --logo-shadow: 0 4px 20px hsl(190 95% 55% / 0.4); /* Cyan shadow */
-    --logo-glow: 0 0 40px hsl(190 95% 55% / 0.6), 0 0 60px hsl(152 76% 45% / 0.3); /* Multi-color glow */
+    /* Clean shadows without glow */
+    --clean-shadow: 0 2px 8px hsl(0 0% 0% / 0.1);
+    --card-shadow: 0 4px 12px hsl(0 0% 0% / 0.15);
 
     --sidebar-background: 0 0% 2%;
     --sidebar-foreground: 0 0% 98%;
@@ -104,10 +104,10 @@ All colors MUST be HSL.
     --input: 0 0% 8%; /* Dark input backgrounds */
     --ring: 190 95% 60%; /* Cyan focus rings */
     
-    /* Dark mode glassmorphism with logo colors */
-    --glass-bg: 0, 0, 0, 0.5; /* Slightly more opaque */
-    --glass-border: 190, 95%, 55%, 0.4; /* Brighter cyan border tint */
-    --glass-shadow: 0 8px 32px 0 rgba(0, 191, 255, 0.2); /* Stronger cyan shadow */
+    /* Dark mode glassmorphism clean */
+    --glass-bg: 0, 0, 0, 0.5;
+    --glass-border: 190, 95%, 55%, 0.2;
+    --glass-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
     
     --sidebar-background: 0 0% 2%;
     --sidebar-foreground: 0 0% 98%;
@@ -154,13 +154,13 @@ All colors MUST be HSL.
     background: var(--gradient-hero);
   }
   
-  .logo-glow {
-    box-shadow: var(--logo-shadow);
+  .clean-shadow {
+    box-shadow: var(--clean-shadow);
     transition: box-shadow 0.3s ease;
   }
   
-  .logo-glow:hover {
-    box-shadow: var(--logo-glow);
+  .clean-shadow:hover {
+    box-shadow: var(--card-shadow);
   }
   
   @keyframes gradient-shift {

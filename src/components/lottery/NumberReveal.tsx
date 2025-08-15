@@ -26,8 +26,8 @@ export const NumberReveal = ({ number, index, isRevealed, delay = 0 }: NumberRev
       relative w-16 h-16 flex items-center justify-center
       border-2 border-primary/20 bg-card/50 backdrop-blur-sm
       transition-all duration-300 transform-gpu
-      ${shouldAnimate ? 'animate-number-reveal animate-glow-pulse' : 'opacity-0 scale-75'}
-      ${isRevealed ? 'border-primary shadow-lg' : ''}
+      ${shouldAnimate ? 'animate-number-reveal animate-clean-pulse' : 'opacity-0 scale-75'}
+      ${isRevealed ? 'border-primary clean-shadow' : ''}
     `}>
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent rounded-lg" />
       

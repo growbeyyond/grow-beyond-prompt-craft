@@ -81,7 +81,7 @@ export const SpinningWheel = ({ numbers, selectedNumber, isSpinning, onSpinCompl
         </div>
 
         {/* Center pin */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full z-10 shadow-lg" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full z-10" />
         
         {/* Pointer */}
         <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-0 h-0 z-20">

@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
 import { CONTACT_INFO, BRAND_INFO, getEmailUrl, getTelUrl, getWhatsAppUrl, getFullAddress } from '@/lib/constants'
+import { Logo } from '@/components/common/Logo'
 
 export const Footer = () => {
   return (
@@ -8,9 +9,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-display font-bold gradient-text mb-4">
-              {BRAND_INFO.name}
-            </h3>
+            <Logo className="mb-6" />
             <p className="text-muted-foreground mb-6 max-w-md">
               {BRAND_INFO.description}. Based in {BRAND_INFO.location}.
             </p>

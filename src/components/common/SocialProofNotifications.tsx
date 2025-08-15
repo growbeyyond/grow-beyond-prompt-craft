@@ -64,7 +64,7 @@ export const SocialProofNotifications = () => {
   return (
     <div className="fixed bottom-6 left-6 z-40 max-w-sm">
       <Card className={cn(
-        "p-4 glass-card border-0 shadow-xl transition-all duration-300",
+        "p-4 glass-card border-0 transition-all duration-300",
         isVisible ? "opacity-100 transform translate-y-0" : "opacity-0 transform translate-y-4"
       )}>
         <div className="flex items-start gap-3">

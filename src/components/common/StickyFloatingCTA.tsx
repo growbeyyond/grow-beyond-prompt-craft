@@ -32,7 +32,7 @@ export const StickyFloatingCTA = () => {
       isMinimized ? "scale-75" : "scale-100"
     )}>
       {!isMinimized ? (
-        <div className="glass-card p-4 max-w-sm shadow-2xl border-0 animate-fade-in">
+        <div className="glass-card p-4 max-w-sm border-0 animate-fade-in">
           <div className="flex items-start justify-between mb-3">
             <Badge className="bg-gradient-to-r from-green-500 to-emerald-500 text-white border-0 animate-pulse">
               🟢 Online Now
@@ -68,7 +68,7 @@ export const StickyFloatingCTA = () => {
         <Button
           onClick={() => setIsMinimized(false)}
           size="lg"
-          className="rounded-full w-14 h-14 p-0 group shadow-2xl animate-glow-pulse"
+          className="rounded-full w-14 h-14 p-0 group clean-shadow animate-clean-pulse"
         >
           <Zap className="w-6 h-6 group-hover:animate-spin" />
         </Button>

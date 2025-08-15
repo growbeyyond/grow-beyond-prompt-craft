@@ -148,12 +148,14 @@ export default {
 					'0%': { transform: 'rotate(0deg)' },
 					'100%': { transform: 'rotate(2160deg)' }
 				},
-				'glow-pulse': {
+				'clean-pulse': {
 					'0%, 100%': {
-						boxShadow: '0 0 20px hsl(var(--primary) / 0.3)'
+						transform: 'scale(1)',
+						opacity: '1'
 					},
 					'50%': {
-						boxShadow: '0 0 40px hsl(var(--primary) / 0.8), 0 0 60px hsl(var(--primary) / 0.4)'
+						transform: 'scale(1.02)',
+						opacity: '0.9'
 					}
 				}
 			},
@@ -165,7 +167,7 @@ export default {
 				'number-reveal': 'number-reveal 0.6s ease-out forwards',
 				'confetti-fall': 'confetti-fall 3s linear infinite',
 				'wheel-spin': 'wheel-spin 4s cubic-bezier(0.2, 0, 0.2, 1)',
-				'glow-pulse': 'glow-pulse 2s ease-in-out infinite'
+				'clean-pulse': 'clean-pulse 2s ease-in-out infinite'
 			}
 		}
 	},

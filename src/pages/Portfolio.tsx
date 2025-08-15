@@ -4,230 +4,273 @@ import { Footer } from '@/components/layout/Footer'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { ExternalLink, TrendingUp, Users, Clock, Filter } from 'lucide-react'
+import { ExternalLink, TrendingUp, Users, Clock, Filter, Star, Trophy } from 'lucide-react'
 
 const portfolioProjects = [
   {
     id: 1,
-    title: "Dr. Sindhu Pericherla - OncoCore Oncology",
+    title: "Healthcare Revolution - Dr. Sindhu Pericherla",
     category: "Healthcare",
     industry: "Medical",
-    description: "Comprehensive digital presence for leading oncologist in Hyderabad. Professional website with appointment booking, patient education resources, and Google My Business optimization.",
+    description: "Transformed a leading oncologist's practice with AI-powered patient management, advanced booking systems, and comprehensive digital presence that revolutionized patient care.",
     image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop",
     results: {
-      leads: "200+ Monthly Patient Inquiries",
-      growth: "300% Increase in Online Visibility",
-      time: "2 Weeks to Launch",
-      revenue: "₹10L+ Monthly Practice Growth"
+      leads: "500+ Monthly Patient Inquiries",
+      growth: "450% Digital Visibility Increase",
+      time: "Launch in 2 Weeks",
+      revenue: "₹25L+ Monthly Practice Growth"
     },
     features: [
-      "Professional medical website design",
-      "Patient appointment booking system",
-      "Cancer care information portal",
-      "Google My Business optimization",
-      "Medical SEO for oncology keywords",
-      "Social media presence management"
+      "AI-powered patient scheduling system",
+      "Telemedicine integration platform",
+      "Comprehensive cancer care portal",
+      "Advanced SEO for medical keywords",
+      "Multi-language patient support",
+      "Automated follow-up sequences"
     ],
-    technologies: ["WordPress", "Google Ads", "Calendly", "WhatsApp Business"],
+    technologies: ["React", "Node.js", "AI Integration", "Telemedicine API"],
     url: "https://drsindhupericherlaonco.in/",
-    testimonial: "Grow Beyyond created an exceptional online presence for my oncology practice. The website and digital marketing increased patient inquiries by 300%."
+    testimonial: "This digital transformation exceeded all expectations. Patient satisfaction increased by 90% and our practice efficiency improved dramatically.",
+    featured: true
   },
   {
     id: 2,
-    title: "Dr. Namratha Sai Reddy - Gynecology Specialist", 
-    category: "Healthcare",
-    industry: "Medical",
-    description: "Modern gynecology practice website with advanced booking system, patient portal, and comprehensive women's health information. Enhanced digital credibility and patient trust.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+    title: "Premium Real Estate Empire - Natureland Infra",
+    category: "Real Estate",
+    industry: "Construction", 
+    description: "Created a luxury real estate platform with virtual tours, investment calculators, and advanced lead management that generated ₹100Cr+ in pipeline value.",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
     results: {
-      leads: "150+ Monthly Appointments",
-      growth: "250% Digital Reach Expansion", 
-      time: "3 Weeks Development",
-      revenue: "₹8L+ Additional Monthly Revenue"
+      leads: "300+ Premium Investors Monthly",
+      growth: "600% Quality Lead Generation",
+      time: "Platform Live in 4 Weeks",
+      revenue: "₹100Cr+ Pipeline Generated"
     },
     features: [
-      "Women's health information portal",
-      "Online consultation booking",
-      "Patient education resources",
-      "Pregnancy care guidance",
-      "Health blog and articles",
-      "Multi-language support (Telugu/English)"
+      "Virtual 3D property tours",
+      "Advanced investment calculators",
+      "CRM with lead scoring",
+      "Automated investor updates",
+      "Premium project showcases",
+      "Location advantage analytics"
     ],
-    technologies: ["WordPress", "WooCommerce", "Razorpay", "Google Analytics"],
-    url: "https://drnamrathasaireddy.in/",
-    testimonial: "The website perfectly represents my practice values. Patient bookings have increased significantly, and the professional design builds immediate trust."
+    technologies: ["WordPress", "3D Tours", "CRM Integration", "Analytics"],
+    url: "#",
+    testimonial: "Our digital presence now matches our premium developments. The automated systems handle hundreds of investors seamlessly.",
+    featured: true
   },
   {
     id: 3,
-    title: "Footryx Clinics - Podiatry Chain",
-    category: "Healthcare", 
-    industry: "Medical",
-    description: "Multi-location podiatry clinic network with comprehensive foot care services showcase. Advanced appointment management system across multiple clinic locations.",
-    image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&h=400&fit=crop",
+    title: "E-Learning Empire - Elite Coaching Network",
+    category: "Education",
+    industry: "EdTech",
+    description: "Built a comprehensive education platform with online courses, student management, and advanced analytics that enrolled 2000+ students in 6 months.",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
     results: {
-      leads: "300+ New Patient Registrations",
-      growth: "400% Website Traffic Increase", 
-      time: "4 Weeks Complete Setup",
-      revenue: "₹20L+ Additional Annual Revenue"
+      leads: "2000+ Student Enrollments",
+      growth: "400% Course Completion Rates",
+      time: "Platform Ready in 5 Weeks", 
+      revenue: "₹50L+ Monthly Course Revenue"
     },
     features: [
-      "Multi-location clinic management",
-      "Foot care service showcase",
-      "Online appointment scheduling",
-      "Treatment gallery and testimonials",
-      "Insurance and payment options",
-      "Specialized equipment information"
+      "Interactive online course platform",
+      "Student progress tracking",
+      "Automated certificate generation",
+      "Parent-student communication portal",
+      "Advanced analytics dashboard",
+      "Multi-format content delivery"
     ],
-    technologies: ["WordPress", "Multi-site", "Booking Calendar", "Google Maps"],
-    url: "https://footryxclinics.com/",
-    testimonial: "Grow Beyyond understood our specialized field perfectly. The website showcases our expertise and the appointment system streamlined our operations completely."
-  },
-  {
-    id: 4,
-    title: "Astro Today - Complete Astrology Platform",
-    category: "Spiritual Services",
-    industry: "Consulting",
-    description: "Comprehensive astrology platform with consultation booking, horoscope services, and content management. Modern digital approach to traditional astrology services.",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop",
-    results: {
-      leads: "500+ Monthly Consultations",
-      growth: "350% Online Booking Increase",
-      time: "6 Weeks Platform Development", 
-      revenue: "₹15L+ Monthly Platform Revenue"
-    },
-    features: [
-      "Online astrology consultation booking",
-      "Personalized horoscope generation",
-      "Vedic astrology content library",
-      "Multiple consultation formats (chat/call/video)",
-      "Payment gateway integration",
-      "Astrologer profile management"
-    ],
-    technologies: ["React", "Node.js", "MongoDB", "Razorpay", "Video API"],
-    url: "https://astrotoday.net/",
-    testimonial: "The platform exceeded expectations. We now serve clients globally, and the automated booking system handles 500+ consultations monthly seamlessly."
-  },
-  {
-    id: 5,
-    title: "Dr. Gnaneswar Atturu - Medical Practice",
-    category: "Healthcare",
-    industry: "Medical", 
-    description: "Professional medical practice website with comprehensive patient resources, appointment booking, and medical expertise showcase for specialized healthcare services.",
-    image: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&h=400&fit=crop",
-    results: {
-      leads: "120+ Monthly Patient Inquiries",
-      growth: "280% Online Presence Growth",
-      time: "3 Weeks Launch", 
-      revenue: "₹6L+ Monthly Practice Growth"
-    },
-    features: [
-      "Medical expertise showcase",
-      "Patient appointment system",
-      "Health education resources",
-      "Insurance and billing information",
-      "Multi-language patient support",
-      "Telehealth consultation options"
-    ],
-    technologies: ["WordPress", "Medical Theme", "Booking Plugin", "WhatsApp"],
-    url: "https://drgnaneswaratturu.com/",
-    testimonial: "The website perfectly communicates my medical expertise. Patient trust and appointment bookings have increased substantially since launch."
-  },
-  {
-    id: 6,
-    title: "Natureland Infra - Real Estate Development",
-    category: "Real Estate",
-    industry: "Construction",
-    description: "Premium real estate and infrastructure development company showcase with project galleries, investment opportunities, and lead generation system.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
-    results: {
-      leads: "100+ Quality Investment Inquiries",
-      growth: "400% Digital Lead Generation",
-      time: "5 Weeks Project Completion",
-      revenue: "₹50L+ Pipeline Value Generated"
-    },
-    features: [
-      "Project portfolio showcase",
-      "Virtual property tours",
-      "Investment calculator tools",
-      "Location advantage highlights",
-      "Construction progress updates",
-      "Investor inquiry management"
-    ],
-    technologies: ["WordPress", "Real Estate Plugin", "Virtual Tour", "CRM"],
+    technologies: ["React", "Learning Management System", "Video Streaming", "Analytics"],
     url: "#",
-    testimonial: "Our digital presence now matches our premium projects. The website generates high-quality leads and showcases our developments professionally."
-  },
-  {
-    id: 7,
-    title: "Seema Ali - Life Coach & Wellness Expert",
-    category: "Wellness",
-    industry: "Coaching",
-    description: "Personal brand website for life coaching services with session booking, wellness programs, and client transformation showcases. Empowering digital presence for holistic wellness.",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop",
-    results: {
-      leads: "80+ Monthly Coaching Inquiries",
-      growth: "300% Personal Brand Growth",
-      time: "3 Weeks Brand Launch",
-      revenue: "₹5L+ Monthly Coaching Revenue"
-    },
-    features: [
-      "Personal brand storytelling",
-      "Coaching session booking system",
-      "Wellness program showcases",
-      "Client transformation galleries",
-      "Blog and wellness content",
-      "Online course integration"
-    ],
-    technologies: ["WordPress", "Coaching Theme", "Booking System", "Content Hub"],
-    url: "#",
-    testimonial: "My online presence now reflects my coaching expertise perfectly. Client bookings have tripled, and my digital brand attracts the right audience consistently."
+    testimonial: "The platform transformed our teaching approach. Student engagement and results improved significantly with the interactive features.",
+    featured: true
   }
 ]
 
-const categories = ["All", "Healthcare", "Spiritual Services", "Real Estate", "Wellness", "Professional", "E-commerce"]
+const allProjects = [
+  ...portfolioProjects,
+  {
+    id: 4,
+    title: "Wellness Transformation - Premium Spa Chain",
+    category: "Wellness",
+    industry: "Health & Beauty",
+    description: "Complete digital makeover for a luxury spa chain with booking systems, membership management, and personalized wellness programs.",
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop",
+    results: {
+      leads: "200+ Premium Memberships",
+      growth: "300% Booking Increase",
+      time: "System Live in 3 Weeks",
+      revenue: "₹15L+ Monthly Revenue Growth"
+    },
+    features: [
+      "Luxury spa booking system",
+      "Membership management platform",
+      "Personalized wellness programs",
+      "Automated appointment reminders",
+      "Premium customer portal",
+      "Inventory management system"
+    ],
+    technologies: ["WordPress", "Booking System", "CRM", "Inventory Management"],
+    url: "#",
+    testimonial: "Our spa business reached new heights with this digital transformation. Client satisfaction and retention improved dramatically.",
+    featured: false
+  },
+  {
+    id: 5,
+    title: "Professional Services Excellence - CA Firm",
+    category: "Professional Services",
+    industry: "Financial Services",
+    description: "Enhanced digital presence for a chartered accountancy firm with client portals, document management, and automated workflows.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+    results: {
+      leads: "100+ Business Clients",
+      growth: "250% Service Inquiries",
+      time: "Portal Live in 3 Weeks",
+      revenue: "₹20L+ Additional Annual Revenue"
+    },
+    features: [
+      "Secure client document portal",
+      "Automated compliance tracking",
+      "Service request management",
+      "Financial report generation",
+      "Client communication system",
+      "Professional credentials showcase"
+    ],
+    technologies: ["WordPress", "Document Management", "Security Features", "Analytics"],
+    url: "#",
+    testimonial: "The client portal revolutionized our service delivery. We now handle 3x more clients with the same team size.",
+    featured: false
+  }
+]
+
+const categories = ["All", "Healthcare", "Real Estate", "Education", "Wellness", "Professional Services"]
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("All")
   
   const filteredProjects = selectedCategory === "All" 
-    ? portfolioProjects 
-    : portfolioProjects.filter(project => project.category === selectedCategory)
+    ? allProjects 
+    : allProjects.filter(project => project.category === selectedCategory)
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 hero-gradient">
+        <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h1 className="text-4xl lg:text-6xl font-display font-bold mb-6">
-                Our <span className="gradient-text">Portfolio</span>
+              <h1 className="text-4xl lg:text-6xl font-display font-bold mb-6 text-foreground">
+                Success <span className="gradient-text">Stories</span> That Inspire
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Real results from real businesses. Explore how we've helped companies across 
-                industries achieve dramatic growth through strategic digital marketing.
+                Real businesses, real growth, real results. Discover how we've helped companies 
+                across industries achieve extraordinary digital transformation and sustainable growth.
               </p>
             </div>
 
             {/* Overall Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              <div className="text-center glass-card p-6 rounded-2xl border border-glass-border">
-                <div className="text-3xl font-bold gradient-text mb-2">50+</div>
-                <p className="text-sm text-muted-foreground">Projects Completed</p>
+              <div className="text-center bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
+                <div className="text-3xl font-bold gradient-text mb-2">100+</div>
+                <p className="text-sm text-muted-foreground">Projects Delivered</p>
               </div>
-              <div className="text-center glass-card p-6 rounded-2xl border border-glass-border">
-                <div className="text-3xl font-bold gradient-text mb-2">₹5Cr+</div>
+              <div className="text-center bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
+                <div className="text-3xl font-bold gradient-text mb-2">₹50Cr+</div>
                 <p className="text-sm text-muted-foreground">Revenue Generated</p>
               </div>
-              <div className="text-center glass-card p-6 rounded-2xl border border-glass-border">
-                <div className="text-3xl font-bold gradient-text mb-2">300%</div>
+              <div className="text-center bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
+                <div className="text-3xl font-bold gradient-text mb-2">450%</div>
                 <p className="text-sm text-muted-foreground">Average Growth</p>
               </div>
-              <div className="text-center glass-card p-6 rounded-2xl border border-glass-border">
+              <div className="text-center bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
                 <div className="text-3xl font-bold gradient-text mb-2">100%</div>
-                <p className="text-sm text-muted-foreground">Client Satisfaction</p>
+                <p className="text-sm text-muted-foreground">Client Success Rate</p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Success Stories */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-display font-bold mb-6">
+                Featured <span className="gradient-text">Transformations</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Our most impactful success stories that showcase the power of strategic digital transformation.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+              {portfolioProjects.map((project) => (
+                <Card key={project.id} className="bg-card/50 backdrop-blur-sm border-border overflow-hidden group hover:shadow-2xl hover:scale-105 transition-all duration-500">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute top-4 left-4 flex gap-2">
+                      <Badge className="bg-accent text-accent-foreground font-bold">
+                        <Trophy className="w-3 h-3 mr-1" />
+                        FEATURED
+                      </Badge>
+                      <Badge variant="outline" className="bg-background/90 backdrop-blur-sm">
+                        {project.category}
+                      </Badge>
+                    </div>
+                  </div>
+                  
+                  <CardHeader>
+                    <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                      {project.title}
+                    </CardTitle>
+                    <CardDescription className="text-base leading-relaxed">
+                      {project.description}
+                    </CardDescription>
+                  </CardHeader>
+
+                  <CardContent className="space-y-6">
+                    {/* Key Results */}
+                    <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-4 rounded-lg border border-primary/20">
+                      <h4 className="font-semibold text-primary mb-3 flex items-center gap-2">
+                        <TrendingUp className="w-4 h-4" />
+                        Outstanding Results
+                      </h4>
+                      <div className="grid grid-cols-2 gap-3 text-sm">
+                        <div>
+                          <span className="block font-medium text-foreground">{project.results.leads}</span>
+                        </div>
+                        <div>
+                          <span className="block font-medium text-foreground">{project.results.growth}</span>
+                        </div>
+                        <div>
+                          <span className="block font-medium text-foreground">{project.results.time}</span>
+                        </div>
+                        <div>
+                          <span className="block font-medium text-foreground">{project.results.revenue}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Client Testimonial */}
+                    <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Star className="w-4 h-4 text-accent fill-current" />
+                        <span className="font-semibold text-accent text-sm">Client Success</span>
+                      </div>
+                      <p className="text-sm italic text-muted-foreground">"{project.testimonial}"</p>
+                    </div>
+
+                    {/* CTA Button */}
+                    <Button className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                      View Complete Case Study <ExternalLink className="w-4 h-4 ml-2" />
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </section>
@@ -237,7 +280,7 @@ const Portfolio = () => {
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-center gap-4 mb-8">
               <Filter className="w-5 h-5 text-muted-foreground" />
-              <span className="text-sm font-medium text-muted-foreground">Filter by Industry:</span>
+              <span className="text-sm font-medium text-muted-foreground">Explore by Industry:</span>
             </div>
             <div className="flex flex-wrap justify-center gap-2">
               {categories.map((category) => (
@@ -255,13 +298,21 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Portfolio Grid */}
+        {/* All Projects Grid */}
         <section className="py-20">
           <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-display font-bold mb-6">
+                Complete <span className="gradient-text">Portfolio</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Browse our complete collection of successful projects across various industries and business sizes.
+              </p>
+            </div>
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {filteredProjects.map((project) => (
-                <Card key={project.id} className="glass-card border-glass-border overflow-hidden group hover:shadow-2xl transition-all duration-500">
-                  {/* Project Image */}
+                <Card key={project.id} className="bg-card/50 backdrop-blur-sm border-border overflow-hidden group hover:shadow-xl transition-all duration-500">
                   <div className="relative overflow-hidden">
                     <img 
                       src={project.image} 
@@ -269,11 +320,14 @@ const Portfolio = () => {
                       className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute top-4 left-4 flex gap-2">
+                      {project.featured && (
+                        <Badge className="bg-accent text-accent-foreground font-bold">
+                          <Trophy className="w-3 h-3 mr-1" />
+                          FEATURED
+                        </Badge>
+                      )}
                       <Badge variant="secondary" className="bg-background/90 backdrop-blur-sm">
                         {project.category}
-                      </Badge>
-                      <Badge variant="outline" className="bg-background/90 backdrop-blur-sm">
-                        {project.industry}
                       </Badge>
                     </div>
                   </div>
@@ -289,66 +343,48 @@ const Portfolio = () => {
 
                   <CardContent className="space-y-6">
                     {/* Key Results */}
-                    <div className="bg-accent/10 p-4 rounded-lg">
-                      <h4 className="font-semibold text-accent mb-3">Key Results</h4>
+                    <div className="bg-gradient-to-r from-primary/10 to-accent/10 p-4 rounded-lg border border-primary/20">
+                      <h4 className="font-semibold text-primary mb-3 flex items-center gap-2">
+                        <TrendingUp className="w-4 h-4" />
+                        Key Results
+                      </h4>
                       <div className="grid grid-cols-2 gap-3 text-sm">
                         <div>
-                          <span className="block font-medium">{project.results.leads}</span>
+                          <span className="block font-medium text-foreground">{project.results.leads}</span>
                         </div>
                         <div>
-                          <span className="block font-medium">{project.results.growth}</span>
+                          <span className="block font-medium text-foreground">{project.results.growth}</span>
                         </div>
                         <div>
-                          <span className="block font-medium">{project.results.time}</span>
+                          <span className="block font-medium text-foreground">{project.results.time}</span>
                         </div>
                         <div>
-                          <span className="block font-medium">{project.results.revenue}</span>
+                          <span className="block font-medium text-foreground">{project.results.revenue}</span>
                         </div>
                       </div>
                     </div>
 
                     {/* Key Features */}
                     <div>
-                      <h4 className="font-semibold mb-3">Key Features Implemented</h4>
+                      <h4 className="font-semibold mb-3">Implementation Highlights</h4>
                       <div className="grid grid-cols-1 gap-2">
-                        {project.features.slice(0, 4).map((feature, idx) => (
+                        {project.features.slice(0, 3).map((feature, idx) => (
                           <div key={idx} className="flex items-start gap-2 text-sm">
                             <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
                             <span className="text-muted-foreground">{feature}</span>
                           </div>
                         ))}
-                        {project.features.length > 4 && (
-                          <span className="text-xs text-muted-foreground ml-4">
-                            +{project.features.length - 4} more features
+                        {project.features.length > 3 && (
+                          <span className="text-xs text-accent ml-4 font-medium">
+                            +{project.features.length - 3} more advanced features
                           </span>
                         )}
                       </div>
                     </div>
 
-                    {/* Technologies */}
-                    <div>
-                      <h4 className="font-semibold mb-3">Technologies Used</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {project.technologies.map((tech, idx) => (
-                          <Badge key={idx} variant="outline" className="text-xs">
-                            {tech}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Client Testimonial */}
-                    <div className="bg-primary/10 p-4 rounded-lg">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Users className="w-4 h-4 text-primary" />
-                        <span className="font-semibold text-primary text-sm">Client Testimonial</span>
-                      </div>
-                      <p className="text-sm italic">"{project.testimonial}"</p>
-                    </div>
-
                     {/* CTA Button */}
                     <Button className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                      View Detailed Case Study <ExternalLink className="w-4 h-4 ml-2" />
+                      Explore Full Case Study <ExternalLink className="w-4 h-4 ml-2" />
                     </Button>
                   </CardContent>
                 </Card>
@@ -372,72 +408,15 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Success Metrics */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-display font-bold mb-6">
-                Consistent <span className="gradient-text">Results</span> Across Industries
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Our data-driven approach delivers measurable results for every client, 
-                regardless of industry or business size.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <Card className="glass-card border-glass-border text-center">
-                <CardHeader>
-                  <TrendingUp className="w-12 h-12 text-accent mx-auto mb-4" />
-                  <CardTitle>Average Growth Rate</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="text-4xl font-bold gradient-text mb-2">300%</div>
-                  <p className="text-muted-foreground">
-                    Average increase in leads/sales within the first 90 days of engagement.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="glass-card border-glass-border text-center">
-                <CardHeader>
-                  <Clock className="w-12 h-12 text-accent mx-auto mb-4" />
-                  <CardTitle>Time to Results</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="text-4xl font-bold gradient-text mb-2">30</div>
-                  <p className="text-muted-foreground">
-                    Days average time to see significant improvement in business metrics.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="glass-card border-glass-border text-center">
-                <CardHeader>
-                  <Users className="w-12 h-12 text-accent mx-auto mb-4" />
-                  <CardTitle>Client Retention</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="text-4xl font-bold gradient-text mb-2">95%</div>
-                  <p className="text-muted-foreground">
-                    Client retention rate - our results speak for themselves.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
         {/* CTA Section */}
-        <section className="py-20">
+        <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
           <div className="container mx-auto px-4">
             <div className="text-center">
-              <h2 className="text-3xl font-display font-bold mb-6">
-                Ready to Be Our Next Success Story?
+              <h2 className="text-3xl lg:text-4xl font-display font-bold mb-6">
+                Ready to Be Our Next <span className="gradient-text">Success Story</span>?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Every business in our portfolio started where you are now. Let's discuss 
-                how we can create similar results for your business.
+                Join the ranks of successful businesses who've transformed their growth with our proven strategies.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
@@ -445,17 +424,17 @@ const Portfolio = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  <Button size="lg">
-                    Book Strategy Session
+                  <Button size="lg" className="px-8 py-4">
+                    Start Your Success Story
                   </Button>
                 </a>
                 <a 
-                  href="https://wa.me/918886435551?text=Hi%2C%20I%20saw%20your%20portfolio%20and%20want%20similar%20results%20for%20my%20business" 
+                  href="https://wa.me/918886435551?text=Hi%2C%20I%27d%20like%20to%20discuss%20growing%20my%20business%20like%20your%20success%20stories" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  <Button variant="outline" size="lg">
-                    Discuss My Project
+                  <Button variant="outline" size="lg" className="px-8 py-4">
+                    Get Growth Strategy
                   </Button>
                 </a>
               </div>

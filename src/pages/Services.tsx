@@ -2,43 +2,51 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { CheckCircle, Globe, Megaphone, Search, Palette, BarChart3, Zap } from 'lucide-react'
+import { CheckCircle, Globe, Megaphone, Search, Palette, BarChart3, Zap, Star, Trophy, Target, Rocket } from 'lucide-react'
 
 const serviceCategories = [
   {
     id: "websites",
     title: "Website Development",
     icon: Globe,
-    description: "Professional websites that convert visitors into customers",
+    description: "High-converting websites that turn visitors into customers",
+    tagline: "Professional • Fast • Conversion-Optimized",
     features: [
-      "Responsive design for all devices",
-      "SEO-optimized structure",
-      "Fast loading speed (<3 seconds)",
-      "Contact forms and lead capture",
+      "Lightning-fast loading (<2 seconds)",
+      "Mobile-first responsive design",
+      "SEO-optimized architecture",
+      "Advanced lead capture systems",
       "Content management system",
-      "SSL certificate and security",
-      "Google Analytics integration",
-      "3 months technical support"
+      "SSL security & backup systems",
+      "Google Analytics & tracking",
+      "6 months technical support"
     ],
     packages: [
       {
-        name: "Basic Website",
-        price: "₹12,000",
-        description: "Perfect for small businesses and professionals",
-        includes: ["Up to 5 pages", "Contact form", "Basic SEO", "Mobile responsive", "1 year hosting"]
-      },
-      {
-        name: "Business Website",
+        name: "Professional Website",
         price: "₹25,000",
-        description: "Advanced features for growing businesses",
-        includes: ["Up to 10 pages", "Advanced forms", "Premium SEO", "Social integration", "Analytics setup", "Chat widget"]
+        originalPrice: "₹40,000",
+        description: "Perfect for service businesses and professionals",
+        includes: ["Up to 8 pages", "Contact forms", "Premium SEO", "Mobile responsive", "1 year hosting", "Social integration"],
+        popular: false
       },
       {
-        name: "E-commerce Website",
+        name: "Business Growth Website",
         price: "₹45,000",
+        originalPrice: "₹70,000",
+        description: "Advanced features for scaling businesses",
+        includes: ["Up to 15 pages", "Advanced forms", "Premium SEO", "Chat integration", "Analytics setup", "Lead magnets", "Blog system"],
+        popular: true
+      },
+      {
+        name: "E-commerce Platform",
+        price: "₹75,000",
+        originalPrice: "₹120,000",
         description: "Complete online store solution",
-        includes: ["Product catalog", "Payment gateway", "Inventory management", "Order tracking", "Customer accounts", "Marketing tools"]
+        includes: ["Product catalog", "Payment gateway", "Inventory management", "Order tracking", "Customer accounts", "Marketing automation", "Multi-vendor ready"],
+        popular: false
       }
     ]
   },
@@ -46,35 +54,42 @@ const serviceCategories = [
     id: "marketing",
     title: "Digital Marketing",
     icon: Megaphone,
-    description: "Comprehensive marketing strategies that drive growth",
+    description: "ROI-focused marketing campaigns that scale your business",
+    tagline: "Data-Driven • Results-Focused • Scalable",
     features: [
-      "Google Ads management",
-      "Facebook & Instagram ads",
-      "Social media marketing",
-      "Content creation and strategy",
-      "Email marketing campaigns",
-      "WhatsApp marketing",
-      "Lead nurturing automation",
-      "Monthly performance reports"
+      "Google Ads management & optimization",
+      "Facebook & Instagram advertising",
+      "LinkedIn B2B marketing",
+      "Content creation & strategy",
+      "Email marketing automation",
+      "WhatsApp marketing campaigns",
+      "Conversion rate optimization",
+      "Detailed performance analytics"
     ],
     packages: [
       {
-        name: "Starter Growth",
-        price: "₹25,000/month",
-        description: "Essential marketing for new businesses",
-        includes: ["Google Ads setup", "Social media management", "Basic content", "Lead forms", "Monthly reporting"]
+        name: "Growth Accelerator",
+        price: "₹35,000/month",
+        originalPrice: "₹50,000/month",
+        description: "Comprehensive marketing for growing businesses",
+        includes: ["Google & Facebook ads", "Social media management", "Content creation", "Email campaigns", "Monthly strategy calls", "Performance reports"],
+        popular: false
       },
       {
-        name: "Business Growth",
-        price: "₹50,000/month",
-        description: "Comprehensive marketing for established businesses",
-        includes: ["Multi-platform ads", "Advanced targeting", "Content calendar", "Email campaigns", "CRM integration", "Bi-weekly calls"]
+        name: "Business Domination",
+        price: "₹65,000/month",
+        originalPrice: "₹95,000/month",
+        description: "Full-scale marketing for established businesses",
+        includes: ["Multi-platform advertising", "Advanced targeting", "Marketing automation", "CRM integration", "Weekly optimization", "Dedicated manager"],
+        popular: true
       },
       {
-        name: "Enterprise Growth",
-        price: "₹1,00,000/month",
-        description: "Full-scale marketing for large businesses",
-        includes: ["All platforms", "Advanced automation", "Custom strategies", "Dedicated manager", "Weekly reporting", "Priority support"]
+        name: "Enterprise Scaling",
+        price: "₹1,25,000/month",
+        originalPrice: "₹1,80,000/month",
+        description: "Enterprise-level marketing infrastructure",
+        includes: ["All marketing channels", "Custom automation", "Advanced analytics", "24/7 support", "Daily optimization", "C-level reporting"],
+        popular: false
       }
     ]
   },
@@ -82,35 +97,42 @@ const serviceCategories = [
     id: "automation",
     title: "Marketing Automation",
     icon: Zap,
-    description: "Automated systems that work 24/7 to grow your business",
+    description: "AI-powered systems that work 24/7 to grow your business",
+    tagline: "AI-Powered • 24/7 Operation • Scalable Growth",
     features: [
-      "Lead capture automation",
-      "Email sequence setup",
-      "WhatsApp auto-responders",
-      "CRM integration",
-      "Follow-up sequences",
-      "Appointment booking system",
-      "Customer journey mapping",
-      "Performance tracking"
+      "AI-powered lead qualification",
+      "Multi-channel automation workflows",
+      "Smart email sequence optimization",
+      "WhatsApp business automation",
+      "CRM integration & management",
+      "Behavioral trigger systems",
+      "Advanced customer segmentation",
+      "Real-time performance tracking"
     ],
     packages: [
       {
-        name: "Basic Automation",
-        price: "₹15,000 setup",
-        description: "Essential automation for small businesses",
-        includes: ["Lead capture forms", "Basic email sequences", "WhatsApp integration", "Simple CRM setup"]
+        name: "Smart Automation",
+        price: "₹25,000 setup",
+        originalPrice: "₹40,000",
+        description: "Essential automation for growing businesses",
+        includes: ["Lead capture automation", "Email sequences", "WhatsApp integration", "Basic CRM setup", "3 months support"],
+        popular: false
       },
       {
         name: "Advanced Automation",
-        price: "₹35,000 setup",
+        price: "₹55,000 setup",
+        originalPrice: "₹85,000",
         description: "Comprehensive automation workflows",
-        includes: ["Multi-channel automation", "Advanced sequences", "Behavioral triggers", "Detailed analytics", "A/B testing"]
+        includes: ["Multi-channel automation", "Advanced sequences", "Behavioral triggers", "CRM integration", "A/B testing", "6 months support"],
+        popular: true
       },
       {
         name: "Enterprise Automation",
-        price: "₹75,000 setup",
-        description: "Custom automation for complex businesses",
-        includes: ["Custom workflows", "API integrations", "Advanced segmentation", "Multi-touch attribution", "Dedicated support"]
+        price: "₹1,25,000 setup",
+        originalPrice: "₹2,00,000",
+        description: "Custom AI-powered automation systems",
+        includes: ["Custom AI workflows", "API integrations", "Advanced analytics", "Multi-touch attribution", "12 months support", "Dedicated specialist"],
+        popular: false
       }
     ]
   }
@@ -118,20 +140,44 @@ const serviceCategories = [
 
 const Services = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 hero-gradient">
+        <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h1 className="text-4xl lg:text-6xl font-display font-bold mb-6">
-                Our <span className="gradient-text">Services</span>
+              <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <Rocket className="w-4 h-4" />
+                Premium Business Growth Services
+              </div>
+              <h1 className="text-4xl lg:text-6xl font-display font-bold mb-6 text-foreground">
+                Services That <span className="gradient-text">Scale</span> Businesses
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                From websites that convert to marketing that scales, we provide everything 
-                your business needs to grow beyond your competition.
+                From high-converting websites to AI-powered marketing automation, we provide the complete digital infrastructure 
+                your business needs to dominate your market and achieve sustainable growth.
               </p>
+            </div>
+
+            {/* Service Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+              <div className="text-center bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
+                <div className="text-3xl font-bold gradient-text mb-2">100+</div>
+                <p className="text-sm text-muted-foreground">Projects Delivered</p>
+              </div>
+              <div className="text-center bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
+                <div className="text-3xl font-bold gradient-text mb-2">₹200Cr+</div>
+                <p className="text-sm text-muted-foreground">Revenue Generated</p>
+              </div>
+              <div className="text-center bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
+                <div className="text-3xl font-bold gradient-text mb-2">450%</div>
+                <p className="text-sm text-muted-foreground">Average Growth</p>
+              </div>
+              <div className="text-center bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
+                <div className="text-3xl font-bold gradient-text mb-2">100%</div>
+                <p className="text-sm text-muted-foreground">Client Success Rate</p>
+              </div>
             </div>
           </div>
         </section>
@@ -139,14 +185,18 @@ const Services = () => {
         {/* Services Tabs */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <Tabs defaultValue="websites" className="max-w-6xl mx-auto">
-              <TabsList className="grid w-full grid-cols-3 mb-12">
+            <Tabs defaultValue="websites" className="max-w-7xl mx-auto">
+              <TabsList className="grid w-full grid-cols-3 mb-12 bg-muted/30 p-1 rounded-2xl">
                 {serviceCategories.map((category) => {
                   const Icon = category.icon
                   return (
-                    <TabsTrigger key={category.id} value={category.id} className="flex items-center gap-2 py-4">
+                    <TabsTrigger 
+                      key={category.id} 
+                      value={category.id} 
+                      className="flex items-center gap-2 py-4 px-6 rounded-xl data-[state=active]:bg-background data-[state=active]:shadow-lg"
+                    >
                       <Icon className="w-5 h-5" />
-                      <span className="hidden sm:inline">{category.title}</span>
+                      <span className="hidden sm:inline font-medium">{category.title}</span>
                     </TabsTrigger>
                   )
                 })}
@@ -156,57 +206,101 @@ const Services = () => {
                 <TabsContent key={category.id} value={category.id} className="space-y-12">
                   {/* Category Header */}
                   <div className="text-center mb-12">
-                    <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                      <category.icon className="w-8 h-8 text-primary" />
+                    <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-xl">
+                      <category.icon className="w-10 h-10 text-white" />
                     </div>
-                    <h2 className="text-3xl font-display font-bold mb-4">{category.title}</h2>
-                    <p className="text-xl text-muted-foreground max-w-2xl mx-auto">{category.description}</p>
+                    <h2 className="text-3xl lg:text-4xl font-display font-bold mb-4">{category.title}</h2>
+                    <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-4">{category.description}</p>
+                    <Badge variant="outline" className="text-sm px-4 py-1">
+                      {category.tagline}
+                    </Badge>
                   </div>
 
-                  {/* Features */}
-                  <div className="glass-card p-8 rounded-2xl border border-glass-border mb-12">
-                    <h3 className="text-2xl font-semibold mb-6 text-center">What's Included</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Features Showcase */}
+                  <div className="bg-gradient-to-br from-primary/5 to-accent/5 p-8 rounded-3xl border border-border mb-12">
+                    <h3 className="text-2xl font-bold mb-8 text-center flex items-center justify-center gap-2">
+                      <Target className="w-6 h-6 text-primary" />
+                      What's Included
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {category.features.map((feature, index) => (
                         <div key={index} className="flex items-center gap-3">
-                          <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                          <span>{feature}</span>
+                          <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                            <CheckCircle className="w-4 h-4 text-white" />
+                          </div>
+                          <span className="text-foreground font-medium">{feature}</span>
                         </div>
                       ))}
                     </div>
                   </div>
 
-                  {/* Packages */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {category.packages.map((pkg, index) => (
-                      <Card key={index} className="glass-card border-glass-border relative">
-                        {index === 1 && (
-                          <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                            <span className="bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-medium">
-                              Most Popular
-                            </span>
-                          </div>
-                        )}
-                        <CardHeader className="text-center">
-                          <CardTitle className="text-2xl">{pkg.name}</CardTitle>
-                          <div className="text-3xl font-bold gradient-text">{pkg.price}</div>
-                          <CardDescription className="text-base">{pkg.description}</CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                          <ul className="space-y-3 mb-6">
-                            {pkg.includes.map((item, idx) => (
-                              <li key={idx} className="flex items-center gap-2">
-                                <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
-                                <span className="text-sm">{item}</span>
-                              </li>
-                            ))}
-                          </ul>
-                          <Button className="w-full" variant={index === 1 ? "default" : "outline"}>
-                            Get Started
-                          </Button>
-                        </CardContent>
-                      </Card>
-                    ))}
+                  {/* Pricing Packages */}
+                  <div>
+                    <div className="text-center mb-12">
+                      <h3 className="text-2xl lg:text-3xl font-display font-bold mb-4">
+                        Choose Your <span className="gradient-text">Growth Package</span>
+                      </h3>
+                      <p className="text-lg text-muted-foreground">
+                        Transparent pricing with no hidden costs. All packages include our success guarantee.
+                      </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                      {category.packages.map((pkg, index) => (
+                        <Card key={index} className={`bg-card/50 backdrop-blur-sm border-border relative overflow-hidden group hover:shadow-2xl transition-all duration-500 ${pkg.popular ? 'ring-2 ring-primary shadow-xl scale-105' : ''}`}>
+                          {pkg.popular && (
+                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+                              <Badge className="bg-gradient-to-r from-accent to-primary text-white font-bold px-4 py-2 rounded-full">
+                                <Star className="w-3 h-3 mr-1 fill-current" />
+                                MOST POPULAR
+                              </Badge>
+                            </div>
+                          )}
+                          
+                          <CardHeader className="text-center pb-6">
+                            <CardTitle className="text-2xl font-bold text-foreground">{pkg.name}</CardTitle>
+                            <div className="space-y-2">
+                              <div className="flex items-center justify-center gap-2">
+                                <span className="text-4xl font-bold gradient-text">{pkg.price}</span>
+                                {pkg.originalPrice && (
+                                  <span className="text-lg text-muted-foreground line-through">{pkg.originalPrice}</span>
+                                )}
+                              </div>
+                              {pkg.originalPrice && (
+                                <Badge variant="outline" className="text-xs bg-accent/10 text-accent">
+                                  Save {Math.round((1 - parseInt(pkg.price.replace(/[^0-9]/g, '')) / parseInt(pkg.originalPrice.replace(/[^0-9]/g, ''))) * 100)}%
+                                </Badge>
+                              )}
+                            </div>
+                            <CardDescription className="text-base leading-relaxed">{pkg.description}</CardDescription>
+                          </CardHeader>
+                          
+                          <CardContent>
+                            <ul className="space-y-4 mb-8">
+                              {pkg.includes.map((item, idx) => (
+                                <li key={idx} className="flex items-start gap-3">
+                                  <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <CheckCircle className="w-3 h-3 text-white" />
+                                  </div>
+                                  <span className="text-sm font-medium text-foreground">{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                            
+                            <Button 
+                              className={`w-full py-3 text-base font-semibold transition-all duration-300 ${
+                                pkg.popular 
+                                  ? 'bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white' 
+                                  : 'hover:bg-primary hover:text-primary-foreground'
+                              }`}
+                              variant={pkg.popular ? "default" : "outline"}
+                            >
+                              {pkg.popular ? 'Start Growing Now' : 'Get Started'}
+                            </Button>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
                   </div>
                 </TabsContent>
               ))}
@@ -214,16 +308,48 @@ const Services = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* Success Guarantee */}
         <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-8 rounded-3xl border border-primary/20">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Trophy className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl lg:text-3xl font-bold mb-4">Our Success Guarantee</h3>
+                <p className="text-lg text-muted-foreground mb-6">
+                  We're so confident in our services that we guarantee results. If you don't see significant improvement 
+                  in your business metrics within 90 days, we'll work for free until you do.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                  <div className="flex items-center gap-2 justify-center">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                    <span>90-day guarantee</span>
+                  </div>
+                  <div className="flex items-center gap-2 justify-center">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                    <span>Measurable results</span>
+                  </div>
+                  <div className="flex items-center gap-2 justify-center">
+                    <CheckCircle className="w-4 h-4 text-accent" />
+                    <span>Full transparency</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+          <div className="container mx-auto px-4">
             <div className="text-center">
-              <h2 className="text-3xl font-display font-bold mb-6">
-                Ready to Choose Your Growth Package?
+              <h2 className="text-3xl lg:text-4xl font-display font-bold mb-6">
+                Ready to <span className="gradient-text">Scale</span> Your Business?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Not sure which service is right for you? Book a free consultation and we'll 
-                create a custom growth plan for your business.
+                Join hundreds of successful businesses who've transformed their growth with our proven strategies. 
+                Book a free consultation to discuss your custom growth plan.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
@@ -231,17 +357,17 @@ const Services = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  <Button size="lg">
-                    Book Free Consultation
+                  <Button size="lg" className="px-8 py-4 bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white">
+                    Book Free Strategy Call
                   </Button>
                 </a>
                 <a 
-                  href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20services" 
+                  href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20business%20growth%20services" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  <Button variant="outline" size="lg">
-                    WhatsApp Us
+                  <Button variant="outline" size="lg" className="px-8 py-4">
+                    WhatsApp for Quick Help
                   </Button>
                 </a>
               </div>

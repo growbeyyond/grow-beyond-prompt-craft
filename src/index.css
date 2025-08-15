@@ -8,13 +8,13 @@ All colors MUST be HSL.
 
 /* ============= PREMIUM DESIGN SYSTEM ============= */
 :root {
-  /* Base Colors - Deep Black Premium Background */
-  --background: 0 0% 2%;
-  --foreground: 0 0% 98%;
-  --card: 0 0% 4%;
-  --card-foreground: 0 0% 98%;
-  --popover: 0 0% 2%;
-  --popover-foreground: 0 0% 98%;
+  /* Base Colors - Clean White Premium Background */
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3%;
+  --card: 0 0% 98%;
+  --card-foreground: 0 0% 5%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 3%;
   
   /* Primary - Sophisticated Green inspired by Grow Beyyond logo */
   --primary: 142 76% 48%;
@@ -41,13 +41,13 @@ All colors MUST be HSL.
   --tertiary-glow: 270 95% 75%;
   
   /* Muted Colors - Refined */
-  --muted: 0 0% 8%;
-  --muted-foreground: 0 0% 70%;
-  --muted-light: 0 0% 12%;
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 45%;
+  --muted-light: 0 0% 94%;
   
   /* Border Colors - Subtle */
-  --border: 0 0% 12%;
-  --input: 0 0% 8%;
+  --border: 0 0% 90%;
+  --input: 0 0% 96%;
   --ring: 142 76% 48%;
   
   /* Status Colors */

@@ -8,115 +8,115 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Grow Beyyond Logo-Based Brand Colors */
-    --background: 240 10% 98%; /* Ultra clean white with subtle blue undertone */
-    --foreground: 217 28% 8%; /* Deep charcoal for maximum readability */
+    /* Black Background with Logo-Inspired Colors */
+    --background: 0 0% 0%; /* Pure black background */
+    --foreground: 0 0% 98%; /* Clean white text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 217 28% 8%;
+    --card: 0 0% 3%; /* Very dark card background */
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 217 28% 8%;
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Primary: Electric Blue from logo gradient */
-    --primary: 224 100% 60%; /* Vibrant Electric Blue #2D6BFF */
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 224 100% 70%; /* Lighter version for glows */
+    /* Primary: Electric Cyan from logo tech side */
+    --primary: 190 95% 55%; /* Vibrant Electric Cyan */
+    --primary-foreground: 0 0% 0%;
+    --primary-glow: 190 95% 65%; /* Brighter cyan for glows */
 
-    /* Secondary: Sophisticated navy for depth */
-    --secondary: 217 32% 18%; /* Deep Navy #1A2332 */
+    /* Secondary: Rich Emerald from logo nature side */
+    --secondary: 152 76% 45%; /* Rich Emerald Green */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 97%;
-    --muted-foreground: 215 18% 45%;
+    --muted: 0 0% 8%; /* Dark muted background */
+    --muted-foreground: 0 0% 60%; /* Light gray text */
 
-    /* Accent: Jade Green from logo gradient */
-    --accent: 153 82% 48%; /* Vibrant Jade Green #0EC27D */
-    --accent-foreground: 0 0% 100%;
-    --accent-glow: 153 82% 58%; /* Lighter version for glows */
+    /* Accent: Bright Lime from logo highlights */
+    --accent: 80 85% 60%; /* Bright Lime Green */
+    --accent-foreground: 0 0% 0%;
+    --accent-glow: 80 85% 70%; /* Brighter lime for glows */
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 92%;
-    --input: 220 13% 92%;
-    --ring: 224 100% 60%;
+    --border: 0 0% 15%; /* Dark borders with subtle tint */
+    --input: 0 0% 8%; /* Dark input backgrounds */
+    --ring: 190 95% 55%; /* Cyan focus rings */
 
     --radius: 1rem;
     
-    /* Logo-inspired Glassmorphism */
-    --glass-bg: 255, 255, 255, 0.12;
-    --glass-border: 255, 255, 255, 0.25;
-    --glass-shadow: 0 8px 32px 0 rgba(45, 107, 255, 0.15);
+    /* Black Background Glassmorphism */
+    --glass-bg: 0, 0, 0, 0.4; /* Semi-transparent black */
+    --glass-border: 190, 95%, 55%, 0.3; /* Cyan border tint */
+    --glass-shadow: 0 8px 32px 0 rgba(0, 191, 255, 0.15); /* Cyan shadow */
     
-    /* Logo-based Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(224 100% 60%), hsl(153 82% 48%));
-    --gradient-primary-soft: linear-gradient(135deg, hsl(224 100% 95%), hsl(153 82% 95%));
-    --gradient-hero: linear-gradient(180deg, hsl(240 10% 98%), hsl(224 100% 98%));
-    --gradient-accent: linear-gradient(135deg, hsl(153 82% 48%), hsl(177 82% 48%));
+    /* Logo-fusion Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(190 95% 55%), hsl(152 76% 45%)); /* Cyan to emerald */
+    --gradient-primary-soft: linear-gradient(135deg, hsl(190 95% 25%), hsl(152 76% 25%)); /* Dark versions */
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 0%), hsl(190 95% 5%)); /* Black to dark cyan */
+    --gradient-accent: linear-gradient(135deg, hsl(80 85% 60%), hsl(190 95% 55%)); /* Lime to cyan */
     
-    /* Logo-inspired effects */
-    --logo-shadow: 0 4px 20px hsl(224 100% 60% / 0.3);
-    --logo-glow: 0 0 30px hsl(224 100% 60% / 0.4);
+    /* Logo-inspired Glow Effects */
+    --logo-shadow: 0 4px 20px hsl(190 95% 55% / 0.4); /* Cyan shadow */
+    --logo-glow: 0 0 40px hsl(190 95% 55% / 0.6), 0 0 60px hsl(152 76% 45% / 0.3); /* Multi-color glow */
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 224 100% 60%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 224 100% 60%;
+    --sidebar-background: 0 0% 2%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 190 95% 55%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 190 95% 55%;
   }
 
   .dark {
-    /* Dark Mode - Logo colors on dark background */
-    --background: 217 28% 6%; /* Deep charcoal matching logo */
-    --foreground: 240 10% 98%; /* Clean white */
+    /* Dark Mode - Same as light mode since we're using black theme */
+    --background: 0 0% 0%; /* Pure black background */
+    --foreground: 0 0% 98%; /* Clean white text */
 
-    --card: 217 28% 8%;
-    --card-foreground: 240 10% 98%;
+    --card: 0 0% 3%; /* Very dark card background */
+    --card-foreground: 0 0% 98%;
 
-    --popover: 217 28% 8%;
-    --popover-foreground: 240 10% 98%;
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Primary remains vibrant in dark mode */
-    --primary: 224 100% 65%; /* Slightly brighter for dark mode */
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 224 100% 75%;
+    /* Primary: Electric Cyan from logo tech side */
+    --primary: 190 95% 60%; /* Slightly brighter cyan for dark mode */
+    --primary-foreground: 0 0% 0%;
+    --primary-glow: 190 95% 70%;
 
-    /* Secondary: Lighter navy for dark mode */
-    --secondary: 217 32% 25%;
+    /* Secondary: Rich Emerald from logo nature side */
+    --secondary: 152 76% 50%; /* Slightly brighter emerald for dark mode */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 217 28% 12%;
-    --muted-foreground: 215 20% 70%;
+    --muted: 0 0% 8%; /* Dark muted background */
+    --muted-foreground: 0 0% 65%; /* Slightly brighter gray text */
 
-    /* Accent remains vibrant in dark mode */
-    --accent: 153 82% 52%; /* Slightly brighter jade green */
-    --accent-foreground: 0 0% 100%;
-    --accent-glow: 153 82% 62%;
+    /* Accent: Bright Lime from logo highlights */
+    --accent: 80 85% 65%; /* Brighter lime for dark mode */
+    --accent-foreground: 0 0% 0%;
+    --accent-glow: 80 85% 75%;
 
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 240 10% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217 28% 18%;
-    --input: 217 28% 18%;
-    --ring: 224 100% 65%;
+    --border: 0 0% 15%; /* Dark borders */
+    --input: 0 0% 8%; /* Dark input backgrounds */
+    --ring: 190 95% 60%; /* Cyan focus rings */
     
     /* Dark mode glassmorphism with logo colors */
-    --glass-bg: 0, 0, 0, 0.15;
-    --glass-border: 255, 255, 255, 0.12;
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+    --glass-bg: 0, 0, 0, 0.5; /* Slightly more opaque */
+    --glass-border: 190, 95%, 55%, 0.4; /* Brighter cyan border tint */
+    --glass-shadow: 0 8px 32px 0 rgba(0, 191, 255, 0.2); /* Stronger cyan shadow */
     
-    --sidebar-background: 217 28% 8%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224 100% 65%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 217 28% 15%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 217 28% 18%;
-    --sidebar-ring: 224 100% 65%;
+    --sidebar-background: 0 0% 2%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 190 95% 60%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 190 95% 60%;
   }
 }
 

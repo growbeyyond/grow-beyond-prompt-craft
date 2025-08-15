@@ -373,7 +373,7 @@ const About = () => {
                   </Button>
                 </a>
                 <a 
-                  href="https://wa.me/918879394486?text=Hi%2C%20I%20want%20to%20learn%20more%20about%20Grow%20Beyyond%20and%20how%20you%20can%20help%20my%20business" 
+                  href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20learn%20more%20about%20Grow%20Beyyond%20and%20how%20you%20can%20help%20my%20business" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >

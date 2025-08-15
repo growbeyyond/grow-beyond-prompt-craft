@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Dr. Rajesh Sharma",
     title: "Cardiologist",
-    location: "Mumbai",
+    location: "Hyderabad",
     rating: 5,
     text: "Grow Beyyond transformed my practice completely. Within 2 months, my patient appointments increased by 400%. Their team understood exactly what I needed and delivered beyond expectations.",
     results: "400% increase in appointments",
@@ -14,7 +14,7 @@ const testimonials = [
   {
     name: "Priya Mehta",
     title: "Founder, Elite Coaching",
-    location: "Delhi",
+    location: "Secunderabad",
     rating: 5,
     text: "The website and Google Ads campaign they created helped us enroll 300+ new students in just 4 months. The lead quality is excellent and the ROI is fantastic.",
     results: "300+ new student enrollments",
@@ -22,8 +22,8 @@ const testimonials = [
   },
   {
     name: "Amit Patel",
-    title: "Real Estate Developer",
-    location: "Pune",
+    title: "Real Estate Developer", 
+    location: "Gachibowli",
     rating: 5,
     text: "Our property sales increased by 250% after launching the new website. The automated lead system they built saves us 10+ hours per week and converts much better.",
     results: "250% increase in property sales",
@@ -32,7 +32,7 @@ const testimonials = [
   {
     name: "Sunita Gupta",
     title: "Wellness Center Owner",
-    location: "Bangalore",
+    location: "Kondapur",
     rating: 5,
     text: "The social media strategy and website redesign brought us 200+ new members in 3 months. Their team is professional, responsive, and truly cares about results.",
     results: "200+ new wellness members",
@@ -41,7 +41,7 @@ const testimonials = [
   {
     name: "Vikram Singh",
     title: "CA Firm Partner",
-    location: "Gurgaon",
+    location: "Jubilee Hills",
     rating: 5,
     text: "Their B2B lead generation system is incredible. We now get 50+ qualified business inquiries every month. The quality of leads has improved dramatically.",
     results: "50+ qualified B2B leads monthly",
@@ -50,7 +50,7 @@ const testimonials = [
   {
     name: "Neha Agarwal",
     title: "Fashion Boutique Owner",
-    location: "Jaipur",
+    location: "Banjara Hills",
     rating: 5,
     text: "The e-commerce website they built increased our online sales by 300%. The design is beautiful and the checkout process is so smooth. Highly recommend!",
     results: "300% increase in online sales",
@@ -123,7 +123,7 @@ export const TestimonialsSection = () => {
               Ready to see similar results for your business? Let's start your growth story today.
             </p>
             <a 
-              href="https://wa.me/918879394486?text=Hi%2C%20I%20want%20to%20grow%20my%20business%20like%20your%20other%20clients" 
+              href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20grow%20my%20business%20like%20your%20other%20clients" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors"

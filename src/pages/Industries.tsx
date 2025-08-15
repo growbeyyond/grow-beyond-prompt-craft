@@ -284,7 +284,7 @@ const Industries = () => {
                   </Button>
                 </a>
                 <a 
-                  href="https://wa.me/918879394486?text=Hi%2C%20I%20want%20to%20discuss%20industry-specific%20marketing%20for%20my%20business" 
+                  href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20discuss%20industry-specific%20marketing%20for%20my%20business" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >

@@ -381,7 +381,7 @@ const Resources = () => {
                   </Button>
                 </a>
                 <a 
-                  href="https://wa.me/918879394486?text=Hi%2C%20I%27ve%20been%20reading%20your%20resources%20and%20want%20to%20discuss%20a%20custom%20strategy" 
+                  href="https://wa.me/918886435551?text=Hi%2C%20I%27ve%20been%20reading%20your%20resources%20and%20want%20to%20discuss%20a%20custom%20strategy" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >

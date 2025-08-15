@@ -73,7 +73,7 @@ const Contact = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               <a 
-                href="https://wa.me/918879394486?text=Hi%2C%20I%20want%20to%20grow%20my%20business%20with%20Grow%20Beyyond" 
+                href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20grow%20my%20business%20with%20Grow%20Beyyond" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group"
@@ -87,7 +87,7 @@ const Contact = () => {
                     <CardDescription>Get instant responses on WhatsApp</CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
-                    <p className="text-2xl font-bold text-green-500 mb-2">+91 8879394486</p>
+                    <p className="text-2xl font-bold text-green-500 mb-2">+91 8886435551</p>
                     <p className="text-sm text-muted-foreground">Available 24/7 for quick questions</p>
                   </CardContent>
                 </Card>
@@ -114,7 +114,7 @@ const Contact = () => {
                 </Card>
               </a>
 
-              <a href="tel:+918879394486" className="group">
+              <a href="tel:+918886435551" className="group">
                 <Card className="glass-card border-glass-border h-full transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
                   <CardHeader className="text-center">
                     <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -124,7 +124,7 @@ const Contact = () => {
                     <CardDescription>Speak with our team right now</CardDescription>
                   </CardHeader>
                   <CardContent className="text-center">
-                    <p className="text-2xl font-bold text-primary mb-2">+91 8879394486</p>
+                    <p className="text-2xl font-bold text-primary mb-2">+91 8886435551</p>
                     <p className="text-sm text-muted-foreground">Mon-Sat: 9AM-7PM IST</p>
                   </CardContent>
                 </Card>
@@ -226,8 +226,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="font-semibold">Phone</p>
-                        <a href="tel:+918879394486" className="text-muted-foreground hover:text-primary">
-                          +91 8879394486
+                        <a href="tel:+918886435551" className="text-muted-foreground hover:text-primary">
+                          +91 8886435551
                         </a>
                       </div>
                     </div>
@@ -238,8 +238,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="font-semibold">Email</p>
-                        <a href="mailto:hello@growbeyyond.com" className="text-muted-foreground hover:text-accent">
-                          hello@growbeyyond.com
+                        <a href="mailto:directors@growbeyyond.in" className="text-muted-foreground hover:text-accent">
+                          directors@growbeyyond.in
                         </a>
                       </div>
                     </div>
@@ -251,7 +251,7 @@ const Contact = () => {
                       <div>
                         <p className="font-semibold">WhatsApp</p>
                         <a 
-                          href="https://wa.me/918879394486" 
+                          href="https://wa.me/918886435551" 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="text-muted-foreground hover:text-green-500"
@@ -267,7 +267,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="font-semibold">Location</p>
-                        <p className="text-muted-foreground">Mumbai, Maharashtra, India</p>
+                        <p className="text-muted-foreground">Hyderabad, Telangana, India</p>
                       </div>
                     </div>
 

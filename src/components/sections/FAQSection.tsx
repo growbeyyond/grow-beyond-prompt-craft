@@ -91,13 +91,13 @@ export const FAQSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:+918879394486"
+                href="tel:+918886435551"
                 className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors"
               >
-                Call +91 8879394486
+                Call +91 8886435551
               </a>
               <a 
-                href="https://wa.me/918879394486?text=Hi%2C%20I%20have%20some%20questions%20about%20your%20services" 
+                href="https://wa.me/918886435551?text=Hi%2C%20I%20have%20some%20questions%20about%20your%20services" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3 border border-primary text-primary font-medium rounded-lg hover:bg-primary/10 transition-colors"

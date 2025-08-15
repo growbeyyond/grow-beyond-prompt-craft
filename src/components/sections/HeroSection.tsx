@@ -51,7 +51,7 @@ export const HeroSection = () => {
           {/* 3D Scene */}
           <div className="relative">
             <SplineEmbed
-              src="https://draft.spline.design/your-spline-scene-url"
+              src="https://prod.spline.design/WN8v3BFvXVYjlsdr/scene.splinecode"
               height={600}
               className="rounded-2xl"
               title="Grow Beyyond 3D Hero Scene"

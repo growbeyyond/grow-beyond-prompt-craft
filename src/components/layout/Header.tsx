@@ -47,9 +47,15 @@ export const Header = () => {
               <Phone className="w-4 h-4 mr-2" />
               +91 8886435551
             </a>
-            <Button size="sm">
-              Get Started
-            </Button>
+            <a 
+              href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20get%20started%20with%20Grow%20Beyyond" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button size="sm">
+                Get Started
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -82,9 +88,15 @@ export const Header = () => {
                   <Phone className="w-4 h-4 mr-2" />
                   +91 8886435551
                 </a>
-                <Button size="sm" className="w-full">
-                  Get Started
-                </Button>
+                <a 
+                  href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20get%20started%20with%20Grow%20Beyyond" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Button size="sm" className="w-full">
+                    Get Started
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

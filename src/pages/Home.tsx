@@ -1,15 +1,31 @@
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { ServicesSection } from '@/components/sections/ServicesSection'
 import { AutomationSection } from '@/components/sections/AutomationSection'
+import { PortfolioSection } from '@/components/sections/PortfolioSection'
+import { ProcessSection } from '@/components/sections/ProcessSection'
+import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { PricingSection } from '@/components/sections/PricingSection'
+import { FAQSection } from '@/components/sections/FAQSection'
+import { FinalCTASection } from '@/components/sections/FinalCTASection'
 
 const Home = () => {
   return (
     <div className="min-h-screen">
-      <HeroSection />
-      <ServicesSection />
-      <AutomationSection />
-      <PricingSection />
+      <Header />
+      <main>
+        <HeroSection />
+        <ServicesSection />
+        <AutomationSection />
+        <PortfolioSection />
+        <ProcessSection />
+        <TestimonialsSection />
+        <PricingSection />
+        <FAQSection />
+        <FinalCTASection />
+      </main>
+      <Footer />
     </div>
   )
 }

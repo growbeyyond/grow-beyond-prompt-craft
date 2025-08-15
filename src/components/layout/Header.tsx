@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { DarkModeToggle } from '@/components/common/DarkModeToggle'
 import { Logo } from '@/components/common/Logo'
@@ -6,7 +6,7 @@ import { Menu, X, Phone } from 'lucide-react'
 import { CONTACT_INFO, getTelUrl, getWhatsAppUrl } from '@/lib/constants'
 import { Link, useLocation } from 'react-router-dom'
 
-export const Header = () => {
+export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()

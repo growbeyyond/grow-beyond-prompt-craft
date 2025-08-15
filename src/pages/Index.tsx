@@ -1,7 +1,7 @@
-import { LotteryDashboard } from '@/components/lottery/LotteryDashboard'
+import Home from './Home'
 
 const Index = () => {
-  return <LotteryDashboard />
+  return <Home />
 };
 
 export default Index;

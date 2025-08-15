@@ -1,5 +1,6 @@
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
+import { ScrollProgress } from '@/components/animations/ScrollProgress'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { ServicesSection } from '@/components/sections/ServicesSection'
 import { TrendingTechSection } from '@/components/sections/TrendingTechSection'
@@ -16,6 +17,7 @@ import { FinalCTASection } from '@/components/sections/FinalCTASection'
 const Home = () => {
   return (
     <div className="min-h-screen">
+      <ScrollProgress />
       <Header />
       <main>
         <HeroSection />

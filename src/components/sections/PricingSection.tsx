@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Check, Star } from 'lucide-react'
+import { cn } from '@/lib/utils'
 
 const plans = [
   {
@@ -60,7 +61,10 @@ export const PricingSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {plans.map((plan, index) => (
-            <Card key={index} className={`relative ${plan.popular ? 'ring-2 ring-primary' : ''} glass-card border-0`}>
+              <Card key={index} className={cn(
+                "group bg-card/50 backdrop-blur-sm border-border shadow-lg hover:scale-105 transition-all duration-500 text-center relative overflow-hidden",
+                plan.popular ? 'ring-2 ring-primary' : ''
+              )}>
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-gradient-to-r from-primary to-accent text-white px-4 py-1 rounded-full text-sm font-medium flex items-center gap-1">
@@ -108,7 +112,7 @@ export const PricingSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="glass-card p-6 rounded-2xl border border-primary/20 inline-block mb-6">
+          <div className="bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg inline-block mb-6">
             <h3 className="text-lg font-semibold mb-2">Ready to Get Started?</h3>
             <p className="text-muted-foreground mb-4">
               All payments secured by Razorpay. Get invoice and GST receipt.

@@ -3,7 +3,7 @@ import { CheckCircle, ArrowRight, Clock, TrendingUp, Users } from 'lucide-react'
 
 export const FinalCTASection = () => {
   return (
-    <section className="py-20 hero-gradient relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary rounded-full blur-3xl"></div>
@@ -23,19 +23,19 @@ export const FinalCTASection = () => {
 
           {/* Value propositions */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="glass-card p-6 rounded-2xl border border-glass-border">
+            <div className="bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
               <Clock className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">24-Hour Delivery</h3>
               <p className="text-muted-foreground">Your website goes live in just 24 hours, not 24 days</p>
             </div>
             
-            <div className="glass-card p-6 rounded-2xl border border-glass-border">
+            <div className="bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
               <TrendingUp className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Guaranteed Growth</h3>
               <p className="text-muted-foreground">200-400% average increase in leads within 90 days</p>
             </div>
             
-            <div className="glass-card p-6 rounded-2xl border border-glass-border">
+            <div className="bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
               <Users className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Expert Support</h3>
               <p className="text-muted-foreground">Dedicated team managing your growth 24/7</p>
@@ -43,7 +43,7 @@ export const FinalCTASection = () => {
           </div>
 
           {/* Special offer */}
-          <div className="glass-card p-8 rounded-2xl border border-glass-border mb-12 text-left max-w-2xl mx-auto">
+          <div className="bg-card/50 backdrop-blur-sm p-8 rounded-2xl border border-border shadow-lg mb-12 text-left max-w-2xl mx-auto">
             <div className="text-center mb-6">
               <span className="inline-block px-4 py-2 bg-accent text-accent-foreground rounded-full text-sm font-medium mb-4">
                 🎉 LIMITED TIME OFFER
@@ -72,7 +72,7 @@ export const FinalCTASection = () => {
               </div>
             </div>
             
-            <div className="border-t border-glass-border mt-6 pt-6 text-center">
+            <div className="border-t border-border mt-6 pt-6 text-center">
               <p className="text-muted-foreground mb-2">Total Value: ₹55,000</p>
               <p className="text-3xl font-bold gradient-text">Your Price: ₹40,000</p>
               <p className="text-sm text-accent font-medium">Save ₹15,000 • Offer expires in 7 days</p>

@@ -6,7 +6,7 @@ export const TestimonialsSection = () => {
   const testimonials = getTestimonialClients()
   
   return (
-    <section className="py-20 hero-gradient">
+    <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-display font-bold mb-6">
@@ -20,7 +20,7 @@ export const TestimonialsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.id} className="glass-card border-glass-border h-full">
+            <Card key={testimonial.id} className="bg-card/50 backdrop-blur-sm border-border shadow-lg h-full">
               <CardContent className="p-6">
                 {/* Quote icon */}
                 <Quote className="w-8 h-8 text-accent mb-4 opacity-50" />
@@ -61,7 +61,7 @@ export const TestimonialsSection = () => {
         </div>
 
         <div className="text-center">
-          <div className="glass-card p-8 rounded-2xl border border-primary/20 inline-block hover:scale-105 transition-transform duration-300">
+          <div className="bg-card/50 backdrop-blur-sm p-8 rounded-2xl border border-border shadow-lg inline-block hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-display font-bold mb-4 gradient-text">
               Join 50+ Growing Businesses
             </h3>

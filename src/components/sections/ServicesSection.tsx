@@ -104,7 +104,7 @@ export const ServicesSection = () => {
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <Card key={index} className="group glass-card hover:scale-105 hover:shadow-2xl transition-all duration-500 border-0 relative overflow-hidden cursor-pointer">
+              <Card key={index} className="group bg-card/50 backdrop-blur-sm border-border shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-500 relative overflow-hidden cursor-pointer">
                 {/* Animated Background Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 

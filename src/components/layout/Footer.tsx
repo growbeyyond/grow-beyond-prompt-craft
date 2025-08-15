@@ -4,7 +4,7 @@ import { Logo } from '@/components/common/Logo'
 
 export const Footer = () => {
   return (
-    <footer className="hero-gradient border-t border-glass-border">
+    <footer className="bg-muted/30 border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -64,7 +64,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-glass-border mt-12 pt-8 text-center">
+        <div className="border-t border-border mt-12 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
             © 2024 Grow Beyyond. All rights reserved. | 
             <a href="/privacy" className="hover:text-accent transition-colors ml-1">Privacy Policy</a> | 

@@ -56,7 +56,7 @@ export const ModernStatsSection = () => {
           {stats.map((stat, index) => {
             const Icon = stat.icon
             return (
-              <Card key={index} className="group glass-card border-0 hover:scale-105 transition-all duration-500 text-center relative overflow-hidden">
+              <Card key={index} className="group bg-card/50 backdrop-blur-sm border-border shadow-lg hover:scale-105 transition-all duration-500 text-center relative overflow-hidden">
                 {/* Animated Background Effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 

@@ -55,7 +55,7 @@ const Contact = () => {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 hero-gradient">
+        <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h1 className="text-4xl lg:text-6xl font-display font-bold mb-6">
@@ -78,7 +78,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="group"
               >
-                <Card className="glass-card border-glass-border h-full transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
+                <Card className="bg-card/50 backdrop-blur-sm border-border shadow-lg h-full transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
                   <CardHeader className="text-center">
                     <div className="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                       <MessageCircle className="w-8 h-8 text-green-500" />
@@ -99,7 +99,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="group"
               >
-                <Card className="glass-card border-glass-border h-full transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
+                <Card className="bg-card/50 backdrop-blur-sm border-border shadow-lg h-full transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
                   <CardHeader className="text-center">
                     <div className="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                       <Calendar className="w-8 h-8 text-blue-500" />
@@ -115,7 +115,7 @@ const Contact = () => {
               </a>
 
               <a href="tel:+918886435551" className="group">
-                <Card className="glass-card border-glass-border h-full transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
+                <Card className="bg-card/50 backdrop-blur-sm border-border shadow-lg h-full transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
                   <CardHeader className="text-center">
                     <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                       <Phone className="w-8 h-8 text-primary" />
@@ -134,7 +134,7 @@ const Contact = () => {
             {/* Contact Form and Info */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Form */}
-              <Card className="glass-card border-glass-border">
+              <Card className="bg-card/50 backdrop-blur-sm border-border shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl">Send us a Message</CardTitle>
                   <CardDescription>Fill out the form below and we'll get back to you within 24 hours.</CardDescription>
@@ -214,7 +214,7 @@ const Contact = () => {
 
               {/* Contact Info */}
               <div className="space-y-8">
-                <Card className="glass-card border-glass-border">
+                <Card className="bg-card/50 backdrop-blur-sm border-border shadow-lg">
                   <CardHeader>
                     <CardTitle className="text-2xl">Contact Information</CardTitle>
                     <CardDescription>Multiple ways to reach us for your convenience.</CardDescription>
@@ -285,7 +285,7 @@ const Contact = () => {
                 </Card>
 
                 {/* FAQ Quick Links */}
-                <Card className="glass-card border-glass-border">
+                <Card className="bg-card/50 backdrop-blur-sm border-border shadow-lg">
                   <CardHeader>
                     <CardTitle>Quick Questions?</CardTitle>
                     <CardDescription>Common answers to save you time</CardDescription>

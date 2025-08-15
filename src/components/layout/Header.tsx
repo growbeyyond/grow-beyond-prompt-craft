@@ -30,7 +30,7 @@ export const Header: React.FC = () => {
   ]
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'glass-card-dark backdrop-blur-xl' : 'glass-card'} border-b border-glass-border`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'glass-card-premium backdrop-blur-xl' : 'glass-card'} border-b border-border`}>
       <div className="container mx-auto px-4">
         <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? 'h-14' : 'h-16'}`}>
           {/* Logo */}
@@ -87,7 +87,7 @@ export const Header: React.FC = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 glass-card-dark backdrop-blur-xl mt-2 rounded-lg animate-fade-in">
+            <div className="px-2 pt-2 pb-3 space-y-1 glass-card-premium backdrop-blur-xl mt-2 rounded-lg animate-fade-in">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -102,7 +102,7 @@ export const Header: React.FC = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="px-3 py-2 border-t border-glass-border mt-2">
+              <div className="px-3 py-2 border-t border-border mt-2">
                 <a href={getTelUrl()} className="flex items-center text-sm text-muted-foreground hover:text-foreground mb-2 transition-colors">
                   <Phone className="w-4 h-4 mr-2" />
                   {CONTACT_INFO.phone}

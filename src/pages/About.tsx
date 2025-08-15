@@ -11,7 +11,7 @@ const About = () => {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 hero-gradient">
+        <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h1 className="text-4xl lg:text-6xl font-display font-bold mb-6">
@@ -25,19 +25,19 @@ const About = () => {
 
             {/* Company Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              <div className="text-center glass-card p-6 rounded-2xl border border-glass-border">
+              <div className="text-center bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
                 <div className="text-3xl font-bold gradient-text mb-2">50+</div>
                 <p className="text-sm text-muted-foreground">Businesses Grown</p>
               </div>
-              <div className="text-center glass-card p-6 rounded-2xl border border-glass-border">
+              <div className="text-center bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
                 <div className="text-3xl font-bold gradient-text mb-2">₹5Cr+</div>
                 <p className="text-sm text-muted-foreground">Revenue Generated</p>
               </div>
-              <div className="text-center glass-card p-6 rounded-2xl border border-glass-border">
+              <div className="text-center bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
                 <div className="text-3xl font-bold gradient-text mb-2">300%</div>
                 <p className="text-sm text-muted-foreground">Average Growth</p>
               </div>
-              <div className="text-center glass-card p-6 rounded-2xl border border-glass-border">
+              <div className="text-center bg-card/50 backdrop-blur-sm p-6 rounded-2xl border border-border shadow-lg">
                 <div className="text-3xl font-bold gradient-text mb-2">24hrs</div>
                 <p className="text-sm text-muted-foreground">Website Delivery</p>
               </div>
@@ -87,7 +87,7 @@ const About = () => {
         <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-              <Card className="glass-card border-glass-border">
+              <Card className="bg-card/50 backdrop-blur-sm border-border shadow-lg">
                 <CardHeader className="text-center">
                   <Target className="w-12 h-12 text-accent mx-auto mb-4" />
                   <CardTitle className="text-2xl">Our Mission</CardTitle>
@@ -101,7 +101,7 @@ const About = () => {
                 </CardContent>
               </Card>
 
-              <Card className="glass-card border-glass-border">
+              <Card className="bg-card/50 backdrop-blur-sm border-border shadow-lg">
                 <CardHeader className="text-center">
                   <Award className="w-12 h-12 text-accent mx-auto mb-4" />
                   <CardTitle className="text-2xl">Our Vision</CardTitle>
@@ -131,7 +131,7 @@ const About = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="glass-card border-glass-border text-center">
+              <Card className="bg-card/50 backdrop-blur-sm border-border shadow-lg text-center">
                 <CardHeader>
                   <Zap className="w-12 h-12 text-accent mx-auto mb-4" />
                   <CardTitle>Speed & Efficiency</CardTitle>
@@ -144,7 +144,7 @@ const About = () => {
                 </CardContent>
               </Card>
 
-              <Card className="glass-card border-glass-border text-center">
+              <Card className="bg-card/50 backdrop-blur-sm border-border shadow-lg text-center">
                 <CardHeader>
                   <TrendingUp className="w-12 h-12 text-accent mx-auto mb-4" />
                   <CardTitle>Results-Driven</CardTitle>
@@ -157,7 +157,7 @@ const About = () => {
                 </CardContent>
               </Card>
 
-              <Card className="glass-card border-glass-border text-center">
+              <Card className="bg-card/50 backdrop-blur-sm border-border shadow-lg text-center">
                 <CardHeader>
                   <Heart className="w-12 h-12 text-accent mx-auto mb-4" />
                   <CardTitle>Client Success</CardTitle>
@@ -284,7 +284,7 @@ const About = () => {
         {/* Team Section DELETED - Replaced with Logo showcase */}
 
         {/* CTA Section */}
-        <section className="py-20 hero-gradient">
+        <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
           <div className="container mx-auto px-4">
             <div className="text-center">
               <Logo className="justify-center mb-8" />

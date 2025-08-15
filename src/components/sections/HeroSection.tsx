@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-pulse" />
@@ -51,7 +51,7 @@ export const HeroSection = () => {
             </div>
 
             {/* Trust Bar */}
-            <div className="glass-card p-6 hover:scale-105 transition-transform duration-300 border border-primary/20">
+            <div className="bg-card/50 backdrop-blur-sm p-6 hover:scale-105 transition-transform duration-300 border border-border rounded-2xl shadow-lg">
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm">
                 <div className="flex items-center gap-2 group">
                   <Award className="w-4 h-4 text-accent group-hover:animate-pulse" />
@@ -81,7 +81,7 @@ export const HeroSection = () => {
               <div className="relative h-full flex items-center justify-center p-8">
                 <div className="grid grid-cols-2 gap-6 max-w-md">
                   <ScrollAnimation animation="scale-in" delay={0.6}>
-                    <div className="glass-card p-6 text-center hover:scale-110 hover:rotate-3 transition-all duration-500 border border-primary/20 shadow-xl group">
+                    <div className="bg-card/50 backdrop-blur-sm p-6 text-center hover:scale-110 hover:rotate-3 transition-all duration-500 border border-primary/20 shadow-xl group">
                       <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/70 rounded-xl mx-auto mb-3 flex items-center justify-center group-hover:animate-pulse shadow-lg">
                         <span className="text-2xl">🌐</span>
                       </div>
@@ -91,7 +91,7 @@ export const HeroSection = () => {
                   </ScrollAnimation>
                   
                   <ScrollAnimation animation="scale-in" delay={0.8}>
-                    <div className="glass-card p-6 text-center hover:scale-110 hover:-rotate-3 transition-all duration-500 border border-accent/20 shadow-xl group">
+                    <div className="bg-card/50 backdrop-blur-sm p-6 text-center hover:scale-110 hover:-rotate-3 transition-all duration-500 border border-accent/20 shadow-xl group">
                       <div className="w-12 h-12 bg-gradient-to-br from-accent to-accent/70 rounded-xl mx-auto mb-3 flex items-center justify-center group-hover:animate-pulse shadow-lg">
                         <span className="text-2xl">🚀</span>
                       </div>
@@ -101,7 +101,7 @@ export const HeroSection = () => {
                   </ScrollAnimation>
                   
                   <ScrollAnimation animation="scale-in" delay={1.0}>
-                    <div className="glass-card p-6 text-center hover:scale-110 hover:rotate-3 transition-all duration-500 border border-yellow-400/20 shadow-xl group">
+                    <div className="bg-card/50 backdrop-blur-sm p-6 text-center hover:scale-110 hover:rotate-3 transition-all duration-500 border border-yellow-400/20 shadow-xl group">
                       <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl mx-auto mb-3 flex items-center justify-center group-hover:animate-pulse shadow-lg">
                         <span className="text-2xl">💰</span>
                       </div>
@@ -111,7 +111,7 @@ export const HeroSection = () => {
                   </ScrollAnimation>
                   
                   <ScrollAnimation animation="scale-in" delay={1.2}>
-                    <div className="glass-card p-6 text-center hover:scale-110 hover:-rotate-3 transition-all duration-500 border border-purple-500/20 shadow-xl group">
+                    <div className="bg-card/50 backdrop-blur-sm p-6 text-center hover:scale-110 hover:-rotate-3 transition-all duration-500 border border-purple-500/20 shadow-xl group">
                       <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl mx-auto mb-3 flex items-center justify-center group-hover:animate-pulse shadow-lg">
                         <span className="text-2xl">👑</span>
                       </div>

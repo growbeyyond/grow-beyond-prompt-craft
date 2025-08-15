@@ -56,7 +56,7 @@ export const TrendingTechSection = () => {
           {trendingTech.map((tech, index) => {
             const Icon = tech.icon
             return (
-              <Card key={index} className="group glass-card border-0 hover:scale-105 transition-all duration-500 text-center">
+              <Card key={index} className="group bg-card/50 backdrop-blur-sm border-border shadow-lg hover:scale-105 transition-all duration-500 text-center">
                 <CardContent className="p-8">
                   <div className={`w-16 h-16 bg-gradient-to-br ${tech.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                     <Icon className="w-8 h-8 text-white" />

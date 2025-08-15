@@ -21,7 +21,7 @@ export const PortfolioSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {portfolioItems.map((item) => (
-            <Card key={item.id} className="glass-card border-0 overflow-hidden group hover:scale-105 hover:shadow-2xl transition-all duration-500 relative">
+            <Card key={item.id} className="bg-card/50 backdrop-blur-sm border-border shadow-lg overflow-hidden group hover:scale-105 hover:shadow-2xl transition-all duration-500 relative">
               {/* Premium Glow Effect */}
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               

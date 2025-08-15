@@ -17,19 +17,19 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center text-sm">
                 <Phone className="w-4 h-4 mr-3 text-accent" />
-                <a href="tel:+918879394486" className="hover:text-accent transition-colors">
-                  +91 8879394486
+                <a href="tel:+918886435551" className="hover:text-accent transition-colors">
+                  +91 8886435551
                 </a>
               </div>
               <div className="flex items-center text-sm">
                 <Mail className="w-4 h-4 mr-3 text-accent" />
-                <a href="mailto:hello@growbeyyond.com" className="hover:text-accent transition-colors">
-                  hello@growbeyyond.com
+                <a href="mailto:directors@growbeyyond.in" className="hover:text-accent transition-colors">
+                  directors@growbeyyond.in
                 </a>
               </div>
               <div className="flex items-center text-sm">
                 <MapPin className="w-4 h-4 mr-3 text-accent" />
-                <span>Mumbai, Maharashtra, India</span>
+                <span>Hyderabad, Telangana, India</span>
               </div>
               <div className="flex items-center text-sm">
                 <Clock className="w-4 h-4 mr-3 text-accent" />
@@ -43,11 +43,11 @@ export const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="/services" className="hover:text-accent transition-colors">Website Development</a></li>
-              <li><a href="/services" className="hover:text-accent transition-colors">Social Media Marketing</a></li>
-              <li><a href="/services" className="hover:text-accent transition-colors">Google Ads Management</a></li>
-              <li><a href="/services" className="hover:text-accent transition-colors">Lead Generation</a></li>
-              <li><a href="/services" className="hover:text-accent transition-colors">Creative Design</a></li>
-              <li><a href="/services" className="hover:text-accent transition-colors">Marketing Automation</a></li>
+              <li><a href="/services" className="hover:text-accent transition-colors">WhatsApp Business Automation</a></li>
+              <li><a href="/services" className="hover:text-accent transition-colors">Instagram Reels & YouTube Shorts</a></li>
+              <li><a href="/services" className="hover:text-accent transition-colors">AI Chatbot Development</a></li>
+              <li><a href="/services" className="hover:text-accent transition-colors">Hyderabad Local SEO</a></li>
+              <li><a href="/services" className="hover:text-accent transition-colors">Regional Language Content</a></li>
             </ul>
           </div>
 

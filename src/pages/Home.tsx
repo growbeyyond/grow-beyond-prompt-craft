@@ -2,7 +2,9 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { ServicesSection } from '@/components/sections/ServicesSection'
+import { CostCalculator } from '@/components/sections/CostCalculator'
 import { PortfolioSection } from '@/components/sections/PortfolioSection'
+import { WhatsAppFloat } from '@/components/common/WhatsAppFloat'
 import { ProcessSection } from '@/components/sections/ProcessSection'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { PricingSection } from '@/components/sections/PricingSection'
@@ -16,6 +18,7 @@ const Home = () => {
       <main>
         <HeroSection />
         <ServicesSection />
+        <CostCalculator />
         <PortfolioSection />
         <ProcessSection />
         <TestimonialsSection />
@@ -24,6 +27,7 @@ const Home = () => {
         <FinalCTASection />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   )
 }

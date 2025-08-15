@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
+import { DarkModeToggle } from '@/components/common/DarkModeToggle'
 import { Menu, X, Phone } from 'lucide-react'
 
 export const Header = () => {
@@ -41,9 +42,10 @@ export const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:+918879394486" className="flex items-center text-sm text-muted-foreground hover:text-foreground">
+            <DarkModeToggle />
+            <a href="tel:+918886435551" className="flex items-center text-sm text-muted-foreground hover:text-foreground">
               <Phone className="w-4 h-4 mr-2" />
-              +91 8879394486
+              +91 8886435551
             </a>
             <Button size="sm">
               Get Started
@@ -76,9 +78,9 @@ export const Header = () => {
                 </a>
               ))}
               <div className="px-3 py-2 border-t border-glass-border mt-2">
-                <a href="tel:+918879394486" className="flex items-center text-sm text-muted-foreground hover:text-foreground mb-2">
+                <a href="tel:+918886435551" className="flex items-center text-sm text-muted-foreground hover:text-foreground mb-2">
                   <Phone className="w-4 h-4 mr-2" />
-                  +91 8879394486
+                  +91 8886435551
                 </a>
                 <Button size="sm" className="w-full">
                   Get Started

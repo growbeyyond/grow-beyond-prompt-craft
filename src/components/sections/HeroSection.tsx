@@ -9,23 +9,26 @@ export const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl lg:text-7xl font-display font-bold mb-6">
-              <span className="gradient-text">Websites in 24 Hours.</span>
+            <h1 className="text-5xl lg:text-7xl font-display font-bold mb-6 leading-tight">
+              <span className="gradient-text animate-pulse">AI-Powered Websites</span>
               <br />
-              Marketing That Works Every Day.
+              <span className="text-4xl lg:text-6xl">Built in 24 Hours.</span>
+              <br />
+              <span className="text-3xl lg:text-5xl text-muted-foreground">Marketing That Converts.</span>
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-              Service websites from ₹12,000. Full growth packages from ₹25,000/month. 
-              Lead generation systems that convert prospects into customers.
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
+              🚀 <strong>Next-gen websites</strong> with AI chatbots, voice search & PWA technology from ₹12,000. 
+              <br />
+              🎯 <strong>Complete growth systems</strong> from ₹25,000/month with guaranteed ROI.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button size="lg" className="text-lg px-8 py-6">
-                Build My Site (24h) <ArrowRight className="ml-2 w-5 h-5" />
+              <Button size="lg" className="text-lg px-8 py-6 group shadow-lg hover:shadow-xl transition-all duration-300">
+                🚀 Launch in 24h <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-                See Our Work
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6 group border-2 hover:bg-gradient-to-r hover:from-primary/10 hover:to-accent/10">
+                💼 View Portfolio
               </Button>
             </div>
 

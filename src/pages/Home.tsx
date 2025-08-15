@@ -2,6 +2,8 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { ServicesSection } from '@/components/sections/ServicesSection'
+import { TrendingTechSection } from '@/components/sections/TrendingTechSection'
+import { ModernStatsSection } from '@/components/sections/ModernStatsSection'
 import { CostCalculator } from '@/components/sections/CostCalculator'
 import { PortfolioSection } from '@/components/sections/PortfolioSection'
 import { WhatsAppFloat } from '@/components/common/WhatsAppFloat'
@@ -18,6 +20,8 @@ const Home = () => {
       <main>
         <HeroSection />
         <ServicesSection />
+        <TrendingTechSection />
+        <ModernStatsSection />
         <CostCalculator />
         <PortfolioSection />
         <ProcessSection />

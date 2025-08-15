@@ -2,7 +2,6 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { HeroSection } from '@/components/sections/HeroSection'
 import { ServicesSection } from '@/components/sections/ServicesSection'
-import { AutomationSection } from '@/components/sections/AutomationSection'
 import { PortfolioSection } from '@/components/sections/PortfolioSection'
 import { ProcessSection } from '@/components/sections/ProcessSection'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
@@ -17,7 +16,6 @@ const Home = () => {
       <main>
         <HeroSection />
         <ServicesSection />
-        <AutomationSection />
         <PortfolioSection />
         <ProcessSection />
         <TestimonialsSection />

@@ -1,19 +1,18 @@
 import { useState } from 'react'
 import { MessageCircle, X, Phone } from 'lucide-react'
+import { CONTACT_INFO, getWhatsAppUrl, getTelUrl } from '@/lib/constants'
 import { Button } from '@/components/ui/button'
 
 export const WhatsAppFloat = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const whatsappNumber = "+918886435551"
-  const welcomeMessage = "Hi! I'm interested in your digital marketing services for my business in Hyderabad."
 
   const openWhatsApp = () => {
-    const url = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(welcomeMessage)}`
+    const url = getWhatsAppUrl()
     window.open(url, '_blank')
   }
 
   const callNow = () => {
-    window.location.href = `tel:${whatsappNumber}`
+    window.location.href = getTelUrl()
   }
 
   return (

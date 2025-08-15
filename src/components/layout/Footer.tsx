@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
+import { CONTACT_INFO, BRAND_INFO, getEmailUrl, getTelUrl, getWhatsAppUrl, getFullAddress } from '@/lib/constants'
 
 export const Footer = () => {
   return (
@@ -8,32 +9,31 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-display font-bold gradient-text mb-4">
-              Grow Beyyond
+              {BRAND_INFO.name}
             </h3>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Service websites from ₹12,000. Full growth packages from ₹25,000/month. 
-              Lead generation systems that convert prospects into customers.
+              {BRAND_INFO.description}. Based in {BRAND_INFO.location}.
             </p>
             <div className="space-y-3">
               <div className="flex items-center text-sm">
                 <Phone className="w-4 h-4 mr-3 text-accent" />
-                <a href="tel:+918886435551" className="hover:text-accent transition-colors">
-                  +91 8886435551
+                <a href={getTelUrl()} className="hover:text-accent transition-colors">
+                  {CONTACT_INFO.phone}
                 </a>
               </div>
               <div className="flex items-center text-sm">
                 <Mail className="w-4 h-4 mr-3 text-accent" />
-                <a href="mailto:directors@growbeyyond.in" className="hover:text-accent transition-colors">
-                  directors@growbeyyond.in
+                <a href={getEmailUrl()} className="hover:text-accent transition-colors">
+                  {CONTACT_INFO.email}
                 </a>
               </div>
               <div className="flex items-center text-sm">
                 <MapPin className="w-4 h-4 mr-3 text-accent" />
-                <span>Hyderabad, Telangana, India</span>
+                <span>{getFullAddress()}</span>
               </div>
               <div className="flex items-center text-sm">
                 <Clock className="w-4 h-4 mr-3 text-accent" />
-                <span>Mon-Sat: 9AM-7PM IST</span>
+                <span>{CONTACT_INFO.hours}</span>
               </div>
             </div>
           </div>

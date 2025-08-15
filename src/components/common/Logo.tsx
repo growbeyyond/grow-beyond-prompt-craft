@@ -10,10 +10,10 @@ export const Logo = ({ className, variant = 'full' }: LogoProps) => {
     <div className={cn("flex items-center", className)}>
       {/* Logo Icon/Symbol */}
       <div className="relative mr-3">
-        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
-          <div className="w-4 h-4 bg-white rounded-sm transform rotate-45"></div>
+        <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center logo-glow">
+          <div className="w-4 h-4 bg-white rounded-sm transform rotate-45 shadow-sm"></div>
         </div>
-        <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+        <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full animate-pulse shadow-sm"></div>
       </div>
       
       {/* Logo Text */}

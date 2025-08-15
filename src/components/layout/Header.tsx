@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { DarkModeToggle } from '@/components/common/DarkModeToggle'
 import { Logo } from '@/components/common/Logo'
 import { Menu, X, Phone } from 'lucide-react'
+import { CONTACT_INFO, getTelUrl, getWhatsAppUrl } from '@/lib/constants'
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -44,16 +45,16 @@ export const Header = () => {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <DarkModeToggle />
-            <a href="tel:+918886435551" className="flex items-center text-sm text-muted-foreground hover:text-foreground">
+            <a href={getTelUrl()} className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors">
               <Phone className="w-4 h-4 mr-2" />
-              +91 8886435551
+              {CONTACT_INFO.phone}
             </a>
             <a 
-              href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20get%20started%20with%20Grow%20Beyyond" 
+              href={getWhatsAppUrl()} 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <Button size="sm">
+              <Button size="sm" className="shadow-lg hover:shadow-xl transition-all duration-300">
                 Get Started
               </Button>
             </a>
@@ -85,16 +86,16 @@ export const Header = () => {
                 </a>
               ))}
               <div className="px-3 py-2 border-t border-glass-border mt-2">
-                <a href="tel:+918886435551" className="flex items-center text-sm text-muted-foreground hover:text-foreground mb-2">
+                <a href={getTelUrl()} className="flex items-center text-sm text-muted-foreground hover:text-foreground mb-2 transition-colors">
                   <Phone className="w-4 h-4 mr-2" />
-                  +91 8886435551
+                  {CONTACT_INFO.phone}
                 </a>
                 <a 
-                  href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20get%20started%20with%20Grow%20Beyyond" 
+                  href={getWhatsAppUrl()} 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  <Button size="sm" className="w-full">
+                  <Button size="sm" className="w-full shadow-lg">
                     Get Started
                   </Button>
                 </a>

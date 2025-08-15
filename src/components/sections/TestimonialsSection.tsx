@@ -115,21 +115,29 @@ export const TestimonialsSection = () => {
         </div>
 
         <div className="text-center">
-          <div className="glass-card p-8 rounded-2xl border border-glass-border inline-block">
-            <h3 className="text-2xl font-display font-bold mb-4">
+          <div className="glass-card p-8 rounded-2xl border border-primary/20 inline-block hover:scale-105 transition-transform duration-300">
+            <h3 className="text-2xl font-display font-bold mb-4 gradient-text">
               Join 50+ Growing Businesses
             </h3>
             <p className="text-muted-foreground mb-6 max-w-md">
               Ready to see similar results for your business? Let's start your growth story today.
             </p>
-            <a 
-              href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20grow%20my%20business%20like%20your%20other%20clients" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors"
-            >
-              Start Your Success Story
-            </a>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a 
+                href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20grow%20my%20business%20like%20your%20other%20clients" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-primary to-accent text-white font-medium rounded-lg hover:opacity-90 transition-opacity shadow-lg"
+              >
+                Start Your Success Story
+              </a>
+              <a 
+                href="tel:+918886435551"
+                className="inline-flex items-center justify-center px-6 py-3 border border-primary/30 text-foreground font-medium rounded-lg hover:bg-primary/10 transition-colors"
+              >
+                Call Now: +91 88864 35551
+              </a>
+            </div>
           </div>
         </div>
       </div>

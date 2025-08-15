@@ -108,12 +108,28 @@ export const PricingSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4">
-            All payments secured by Razorpay. Get invoice and GST receipt.
-          </p>
-          <Button variant="outline" size="lg">
-            Pay Advance Now
-          </Button>
+          <div className="glass-card p-6 rounded-2xl border border-primary/20 inline-block mb-6">
+            <h3 className="text-lg font-semibold mb-2">Ready to Get Started?</h3>
+            <p className="text-muted-foreground mb-4">
+              All payments secured by Razorpay. Get invoice and GST receipt.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a 
+                href="https://wa.me/918886435551?text=Hi%2C%20I%20want%20to%20pay%20advance%20and%20start%20my%20project" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-primary to-accent text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+              >
+                Pay Advance & Start
+              </a>
+              <a 
+                href="tel:+918886435551"
+                className="inline-flex items-center justify-center px-6 py-3 border border-primary/30 text-foreground font-medium rounded-lg hover:bg-primary/10 transition-colors"
+              >
+                Call for Custom Quote
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -11,14 +11,16 @@ export const Logo = ({ className, variant = 'full' }: LogoProps) => {
       {/* Nature-Tech Hybrid Logo */}
       <div className="relative mr-3">
         {/* Main Logo - Organic Leaf Shape with Tech Elements */}
-        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 via-emerald-400 to-teal-500 flex items-center justify-center shadow-lg group-hover:shadow-green-500/30 transition-all duration-500 hover-lift relative overflow-hidden">
-          {/* Leaf Shape */}
-          <div className="w-7 h-7 bg-white/90 rounded-full relative transform group-hover:scale-110 transition-transform duration-500">
-            {/* Organic Pattern */}
-            <div className="absolute inset-1 bg-gradient-to-br from-green-400/30 to-emerald-500/30 rounded-full"></div>
-            {/* Tech Circuit Lines */}
-            <div className="absolute inset-2 border border-green-400/40 rounded-full"></div>
-            <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-green-500 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary via-primary-glow to-accent flex items-center justify-center shadow-lg group-hover:shadow-primary/30 transition-all duration-500 hover-lift relative overflow-hidden">
+          {/* Modern Tech Symbol */}
+          <div className="w-8 h-8 relative transform group-hover:scale-110 transition-transform duration-500">
+            {/* G Symbol with Growth Arrow */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="text-white text-lg font-bold">G</span>
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-accent rounded-full pulse-glow">
+                <div className="absolute inset-1 bg-white rounded-full"></div>
+              </div>
+            </div>
           </div>
           
           {/* Animated Growth Ring */}

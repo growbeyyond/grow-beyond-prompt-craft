@@ -15,15 +15,15 @@ import { SocialProofNotifications } from '@/components/common/SocialProofNotific
 import { ClientLogoWall } from '@/components/common/ClientLogoWall'
 import { LiveMetrics } from '@/components/common/LiveMetrics'
 import { AdvancedLoadingScreen } from '@/components/common/AdvancedLoadingScreen'
-
-import { ProcessSection } from '@/components/sections/ProcessSection'
-
-import { IndustryShowcase } from '@/components/sections/IndustryShowcase'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { PricingSection } from '@/components/sections/PricingSection'
 import { FAQSection } from '@/components/sections/FAQSection'
 import { FinalCTASection } from '@/components/sections/FinalCTASection'
 import { SEOHead } from '@/components/common/SEOHead'
+import { StructuredData } from '@/components/seo/StructuredData'
+import { LiveChatIndicator } from '@/components/common/LiveChatIndicator'
+import { PerformanceMonitor } from '@/components/analytics/PerformanceMonitor'
+import { VideoTestimonials } from '@/components/optimization/VideoTestimonials'
 
 const Home = () => {
   return (
@@ -35,16 +35,11 @@ const Home = () => {
         <Header />
         <main>
           <HeroSection />
-          <ClientLogoWall />
           <ServicesSection />
-          <TrendingTechSection />
-          <LiveMetrics />
+          <PerformanceMonitor />
           <ModernStatsSection />
-          <InteractiveROICalculator />
-          <CostCalculator />
           <PortfolioSection />
-          <IndustryShowcase />
-          <ProcessSection />
+          <VideoTestimonials />
           <TestimonialsSection />
           <PricingSection />
           <FAQSection />
@@ -52,8 +47,11 @@ const Home = () => {
         </main>
         <Footer />
         <WhatsAppFloat />
-        <StickyFloatingCTA />
+        <LiveChatIndicator />
         <SocialProofNotifications />
+        <StructuredData type="organization" data={{}} />
+        <StructuredData type="localBusiness" data={{}} />
+        <StructuredData type="service" data={{}} />
       </div>
     </>
   )

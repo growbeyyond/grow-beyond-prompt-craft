@@ -69,7 +69,7 @@ export const VideoTestimonials = () => {
                 />
                 
                 {/* Play Button Overlay */}
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-background/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <Button
                     size="lg"
                     className="rounded-full w-16 h-16 bg-white/90 hover:bg-white text-primary"
@@ -83,7 +83,7 @@ export const VideoTestimonials = () => {
                 </div>
 
                 {/* Duration Badge */}
-                <div className="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-xs">
+                <div className="absolute bottom-2 right-2 bg-background/70 text-foreground px-2 py-1 rounded text-xs">
                   {testimonial.duration}
                 </div>
               </div>

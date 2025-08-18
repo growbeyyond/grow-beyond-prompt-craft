@@ -70,12 +70,12 @@ export const VideoHero: React.FC<VideoHeroProps> = ({
       </video>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
 
       {/* Controls Overlay */}
       <div className={cn(
         "absolute inset-0 flex items-center justify-center transition-all duration-300",
-        showControls ? "bg-black/20" : "bg-transparent"
+        showControls ? "bg-background/20" : "bg-transparent"
       )}>
         {/* Play/Pause Button */}
         <Button
@@ -177,7 +177,7 @@ export const VideoTestimonial: React.FC<VideoTestimonialProps> = ({
         
         {!isPlaying && (
           <div 
-            className="absolute inset-0 flex items-center justify-center bg-black/40 cursor-pointer group-hover:bg-black/30 transition-colors duration-300"
+            className="absolute inset-0 flex items-center justify-center bg-background/40 cursor-pointer group-hover:bg-background/30 transition-colors duration-300"
             onClick={handlePlay}
           >
             <Button

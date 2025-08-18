@@ -57,10 +57,10 @@ All colors MUST be HSL.
   --warning: 45 95% 55%;
   
   /* Premium Glass Effects - Light Theme Optimized */
-  --glass-bg: 255 255 255 / 0.15;
-  --glass-border: 142 76% 48% / 0.1;
-  --glass-shadow: 0 0% 0% / 0.08;
-  --glass-backdrop: blur(16px);
+  --glass-bg: 255 255 255 / 0.95;
+  --glass-border: 142 76% 48% / 0.15;
+  --glass-shadow: 0 0% 0% / 0.04;
+  --glass-backdrop: blur(20px);
   
   /* Light Theme Gradients */
   --gradient-primary: linear-gradient(135deg, hsl(142 76% 48%) 0%, hsl(189 100% 48%) 50%, hsl(270 95% 65%) 100%);
@@ -71,9 +71,10 @@ All colors MUST be HSL.
   --gradient-subtle: linear-gradient(180deg, hsl(0 0% 99%) 0%, hsl(0 0% 97%) 100%);
   
   /* Animation & Shadow Variables */
-  --shadow-premium: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
-  --shadow-glow: 0 0 30px hsl(142 76% 48% / 0.3);
-  --shadow-accent-glow: 0 0 30px hsl(189 100% 48% / 0.3);
+  --shadow-premium: 0 20px 40px -8px hsl(0 0% 0% / 0.12);
+  --shadow-glow: 0 0 25px hsl(142 76% 48% / 0.2);
+  --shadow-accent-glow: 0 0 25px hsl(189 100% 48% / 0.2);
+  --shadow-elegant: 0 8px 30px -8px hsl(0 0% 0% / 0.08);
   --transition-premium: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
@@ -125,17 +126,17 @@ All colors MUST be HSL.
 
 /* Glass Card Effects */
 .glass-card {
-  background: hsl(var(--background)) / 0.8);
+  background: hsl(var(--background)) / 0.95;
   backdrop-filter: blur(20px);
   border: 1px solid hsl(var(--border));
-  box-shadow: 0 8px 32px 0 hsl(var(--primary)) / 0.05);
+  box-shadow: var(--shadow-elegant);
 }
 
 .glass-card-premium {
-  background: hsl(var(--card)) / 0.9);
+  background: hsl(var(--card)) / 0.98;
   backdrop-filter: blur(24px);
   border: 1px solid hsl(var(--border));
-  box-shadow: 0 12px 40px 0 hsl(var(--primary)) / 0.08);
+  box-shadow: var(--shadow-premium);
 }
 
 /* Premium Gradient Text */

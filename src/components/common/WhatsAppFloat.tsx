@@ -20,10 +20,10 @@ export const WhatsAppFloat = () => {
       {/* WhatsApp Float Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <div className={`transition-all duration-300 ${isOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0'} mb-4`}>
-          <div className="glass-card p-4 w-72">
+          <div className="bg-background/95 backdrop-blur-sm border border-border shadow-lg rounded-2xl p-4 w-72">
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                 <span className="font-semibold text-sm">We're Online!</span>
               </div>
               <button 
@@ -64,7 +64,7 @@ export const WhatsAppFloat = () => {
         {/* Main Float Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 animate-pulse"
+          className="w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl"
         >
           {isOpen ? (
             <X className="w-6 h-6" />
